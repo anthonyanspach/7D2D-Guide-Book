@@ -14,6 +14,7 @@ function WorkstationsScreen({ navigation }) {
         <Button title="Workbench" onPress={() => navigation.navigate('WorkbenchItem')} />
         <Button title="Cement Mixer" onPress={() => navigation.navigate('CementMixerItem')} />
         <Button title="Chemistry Station" onPress={() => navigation.navigate('ChemistryStationItem')} />
+        <Button title="Dew Collector" onPress={() => navigation.navigate('DewCollectorItem')} />
       </View>
     );
   }

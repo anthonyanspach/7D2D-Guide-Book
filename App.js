@@ -38,6 +38,20 @@ import WoodcuttingToolsScreen from './screens/tools/WoodcuttingToolsScreen';
 import SpecialToolsScreen from './screens/tools/SpecialToolsScreen';
 import CraftingScreen from './screens/crafting/CraftingScreen';
 import WorkstationsScreen from './screens/crafting/WorkstationsScreen';
+import MaterialsScreen from './screens/materials/MaterialsScreen';
+import WindowsScreen from './screens/materials/WindowsScreen';
+import TerrainScreen from './screens/materials/TerrainScreen';
+import StairsScreen from './screens/materials/StairsScreen';
+import SidingScreen from './screens/materials/SidingScreen';
+import LightingScreen from './screens/materials/LightingScreen';
+import HatchScreen from './screens/materials/HatchScreen';
+import FurnitureScreen from './screens/materials/FurnitureScreen';
+import FramesScreen from './screens/materials/FramesScreen';
+import FencingScreen from './screens/materials/FencingScreen';
+import DoorsScreen from './screens/materials/DoorsScreen';
+import ContainersScreen from './screens/materials/ContainersScreen';
+import BlockItemsScreen from './screens/materials/BlockItemsScreen';
+import OtherScreen from './screens/materials/OtherScreen';
 
 {/*Item screen imports*/}
 
@@ -153,7 +167,31 @@ import ForgeItem from './screens/items/workstations/Forge';
 import WorkbenchItem from './screens/items/workstations/Workbench';
 import CementMixerItem from './screens/items/workstations/CementMixer';
 import ChemistryStationItem from './screens/items/workstations/ChemistryStation';
-
+import DewCollectorItem from './screens/items/workstations/DewCollector';
+import WoodWindowItem from './screens/items/windows/WoodWindowItem';
+import AsphaltItem from './screens/items/terrain/AsphaltItem';
+import BrickStairsItem from './screens/items/stairs/BrickStairs';
+import CobblestoneStairsItem from './screens/items/stairs/CobblestoneStairs';
+import ConcreteStairsItem from './screens/items/stairs/ConcreteStairs';
+import FlagstoneStairsItem from './screens/items/stairs/FlagstoneStairs';
+import ReinforcedScrapIronStairsItem from './screens/items/stairs/ReinforceScapIronStairs';
+import SteelStairsItem from './screens/items/stairs/SteelStairs';
+import WoodenStairsItem from './screens/items/stairs/WoodenStairs';
+import PlywoodItem from './screens/items/siding/PlywoodItem';
+import BasicLightBulbItem from './screens/items/lighting/BasicLightBulb';
+import BurningBarrelItem from './screens/items/lighting/BurningBarrel';
+import CandleItem from './screens/items/lighting/Candle';
+import OldOutdoorLightItem from './screens/items/lighting/OldOutdoorLight';
+import IronHatchItem from './screens/items/hatch/IronHatch';
+import IronHatchv2Item from './screens/items/hatch/IronHatchv2';
+import IronHatchv3Item from './screens/items/hatch/IronHatchv3';
+import SteelHatchItem from './screens/items/hatch/SteelHatch';
+import SteelHatchPoweredItem from './screens/items/hatch/SteelHatchPowered';
+import VaultHatchv2Item from './screens/items/hatch/VaultHatchv2';
+import VaultHatchv3Item from './screens/items/hatch/VaultHatchv3';
+import WoodenHatchItem from './screens/items/hatch/WoodenHatch';
+import WoodenHatchv2Item from './screens/items/hatch/WoodenHatchv2';
+import WoodenHatchv3Item from './screens/items/hatch/WoodenHatchv3';
 
 
 
@@ -206,6 +244,23 @@ export default function App() {
 
         <Stack.Screen name='CraftingScreen' component={CraftingScreen} />
         <Stack.Screen name='WorkstationsScreen' component={WorkstationsScreen} />
+
+          {/* Crafting screens */}
+
+        <Stack.Screen name='MaterialsScreen' component={MaterialsScreen} />
+        <Stack.Screen name='WindowsScreen' component={WindowsScreen} />
+        <Stack.Screen name='TerrainScreen' component={TerrainScreen} />
+        <Stack.Screen name='StairsScreen' component={StairsScreen} />
+        <Stack.Screen name='SidingScreen' component={SidingScreen} />
+        <Stack.Screen name='LightingScreen' component={LightingScreen} />
+        <Stack.Screen name='HatchScreen' component={HatchScreen} />
+        <Stack.Screen name='FurnitureScreen' component={FurnitureScreen} />
+        <Stack.Screen name='FramesScreen' component={FramesScreen} />
+        <Stack.Screen name='FencingScreen' component={FencingScreen} />
+        <Stack.Screen name='DoorsScreen' component={DoorsScreen} />
+        <Stack.Screen name='ContainersScreen' component={ContainersScreen} />
+        <Stack.Screen name='BlockItemsScreen' component={BlockItemsScreen} />
+        <Stack.Screen name='OtherScreen' component={OtherScreen} />
 
           {/* Item/Hats screens */}
 
@@ -400,6 +455,49 @@ export default function App() {
         <Stack.Screen name='WorkbenchItem' component={WorkbenchItem} />
         <Stack.Screen name='CementMixerItem' component={CementMixerItem} />
         <Stack.Screen name='ChemistryStationItem' component={ChemistryStationItem} />
+        <Stack.Screen name='DewCollectorItem' component={DewCollectorItem} />
+
+          {/* Item/Materials/Windows screens */}
+
+        <Stack.Screen name='WoodWindowItem' component={WoodWindowItem} />
+
+          {/* Item/Materials/Terrain screens */}
+
+        <Stack.Screen name='AsphaltItem' component={AsphaltItem} />
+
+          {/* Item/Materials/Stairs screens */}
+
+        <Stack.Screen name='BrickStairsItem' component={BrickStairsItem} />
+        <Stack.Screen name='CobblestoneStairsItem' component={CobblestoneStairsItem} />
+        <Stack.Screen name='ConcreteStairsItem' component={ConcreteStairsItem} />
+        <Stack.Screen name='FlagstoneStairsItem' component={FlagstoneStairsItem} />
+        <Stack.Screen name='ReinforcedScrapIronStairsItem' component={ReinforcedScrapIronStairsItem} />
+        <Stack.Screen name='SteelStairsItem' component={SteelStairsItem} />
+        <Stack.Screen name='WoodenStairsItem' component={WoodenStairsItem} />
+
+          {/* Item/Materials/Siding screens */}
+
+        <Stack.Screen name='PlywoodItem' component={PlywoodItem} />
+
+          {/* Item/Materials/Lighting screens */}
+
+        <Stack.Screen name='BasicLightBulbItem' component={BasicLightBulbItem} />
+        <Stack.Screen name='BurningBarrelItem' component={BurningBarrelItem} />
+        <Stack.Screen name='CandleItem' component={CandleItem} />
+        <Stack.Screen name='OldOutdoorLightItem' component={OldOutdoorLightItem} />
+
+          {/* Item/Materials/Lighting screens */}
+
+        <Stack.Screen name='IronHatchItem' component={IronHatchItem} />
+        <Stack.Screen name='IronHatchv2Item' component={IronHatchv2Item} />
+        <Stack.Screen name='IronHatchv3Item' component={IronHatchv3Item} />
+        <Stack.Screen name='SteelHatchItem' component={SteelHatchItem} />
+        <Stack.Screen name='SteelHatchPoweredItem' component={SteelHatchPoweredItem} />
+        <Stack.Screen name='VaultHatchv2Item' component={VaultHatchv2Item} />
+        <Stack.Screen name='VaultHatchv3Item' component={VaultHatchv3Item} />
+        <Stack.Screen name='WoodenHatchItem' component={WoodenHatchItem} />
+        <Stack.Screen name='WoodenHatchv2Item' component={WoodenHatchv2Item} />
+        <Stack.Screen name='WoodenHatchv3Item' component={WoodenHatchv3Item} />
 
           {/* Mechanics / descriptions / break downs -for- crafting, farming, food system, Zombies, electricity, game modes, heath, physics, stealth, Skill and Perks */}
 
