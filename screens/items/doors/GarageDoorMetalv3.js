@@ -6,13 +6,12 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
 
-function FramesScreen({ navigation }) {
+function GarageDoorMetalv3Item({ navigation }) {
     return (
       <View>
         <Text>Campfire Item</Text>
-        <Button title="Wood Frame" onPress={() => navigation.navigate('WoodFrameItem')} />
       </View>
     );
   }
 
-export default FramesScreen;
+export default GarageDoorMetalv3Item;

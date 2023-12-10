@@ -14,10 +14,10 @@ function ItemsScreen({ navigation }) {
         <Button title="Tools" onPress={() => navigation.navigate('ToolsScreen')} />
         <Button title="Crafting" onPress={() => navigation.navigate('CraftingScreen')} />
         <Button title="Materials" onPress={() => navigation.navigate('MaterialsScreen')} />
-        <Button title="Weapons" onPress={() => navigation.navigate('')} />
-        <Button title="Traps & Turrets" onPress={() => navigation.navigate('')} />
-        <Button title="Resources" onPress={() => navigation.navigate('')} />
-        <Button title="Food" onPress={() => navigation.navigate('')} />
+        <Button title="Weapons" onPress={() => navigation.navigate('WeaponsScreen')} />
+        <Button title="Traps & Turrets" onPress={() => navigation.navigate('TrapsTurretsScreen')} />
+        <Button title="Resources" onPress={() => navigation.navigate('ResourcesScreen')} />
+        <Button title="Food" onPress={() => navigation.navigate('FoodScreen')} />
       </View>
     );
   }

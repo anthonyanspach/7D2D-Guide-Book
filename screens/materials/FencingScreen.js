@@ -10,6 +10,7 @@ function FencingScreen({ navigation }) {
     return (
       <View>
         <Text>Campfire Item</Text>
+        <Button title="Wood Fence" onPress={() => navigation.navigate('WoodFenceItem')} />
       </View>
     );
   }

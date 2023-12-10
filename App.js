@@ -52,6 +52,10 @@ import DoorsScreen from './screens/materials/DoorsScreen';
 import ContainersScreen from './screens/materials/ContainersScreen';
 import BlockItemsScreen from './screens/materials/BlockItemsScreen';
 import OtherScreen from './screens/materials/OtherScreen';
+import WeaponsScreen from './screens/weapons/WeaponsScreen';
+import ClubsScreen from './screens/weapons/ClubsScreen';
+import SledgehammersScreen from './screens/weapons/SledgehammersScreen';
+import SpearsScreen from './screens/weapons/SpearsScreen';
 
 {/*Item screen imports*/}
 
@@ -192,6 +196,77 @@ import VaultHatchv3Item from './screens/items/hatch/VaultHatchv3';
 import WoodenHatchItem from './screens/items/hatch/WoodenHatch';
 import WoodenHatchv2Item from './screens/items/hatch/WoodenHatchv2';
 import WoodenHatchv3Item from './screens/items/hatch/WoodenHatchv3';
+import AirConditionerItem from './screens/items/furniture/AirConditioner';
+import BedrollItem from './screens/items/furniture/Bedroll';
+import BrassFaucetItem from './screens/items/furniture/BrassFaucet';
+import WashingMachineItem from './screens/items/furniture/WashingMachine';
+import WoodFrameItem from './screens/items/frames/WoodFrame';
+import WoodFenceItem from './screens/items/fencing/WoodFencing';
+import GarageDoorMetalItem from './screens/items/doors/GarageDoorMetal';
+import GarageDoorMetalv2Item from './screens/items/doors/GarageDoorMetalv2';
+import GarageDoorMetalv3Item from './screens/items/doors/GarageDoorMetalv3';
+import IronDoorItem from './screens/items/doors/IronDoor';
+import IronDoorv2Item from './screens/items/doors/IronDoorv2';
+import IronDoorv3Item from './screens/items/doors/IronDoorv3';
+import JailDoorItem from './screens/items/doors/JailDoor';
+import MetalReinforcedWoodenDoorItem from './screens/items/doors/MetalReinforcedWoodenDoor';
+import ReinforcedDrawbridgeItem from './screens/items/doors/ReinforcedDrawbridge';
+import ReinforcedDrawbridgePoweredItem from './screens/items/doors/ReinforcedDrawbridgePowered';
+import ReinforcedSecureWoodenDoorItem from './screens/items/doors/ReinforcedSecureWoodenDoor';
+import VaultDoorItem from './screens/items/doors/VaultDoor';
+import VaultDoorv2Item from './screens/items/doors/VaultDoorv2';
+import VaultDoorv3Item from './screens/items/doors/VaultDoorv3';
+import WoodDoorItem from './screens/items/doors/WoodDoor';
+import CupboardItem from './screens/items/containers/Cupboard';
+import GreenDrawerItem from './screens/items/containers/GreenDrawer';
+import GunSafeItem from './screens/items/containers/GunSafe';
+import MailBoxItem from './screens/items/containers/MailBox';
+import MailDropBox from './screens/items/containers/MailDropBox';
+import MicrowaveItem from './screens/items/containers/Microwave';
+import SecureStorageChestItem from './screens/items/containers/SecureStorageChest';
+import StorageBoxItem from './screens/items/containers/StorageBox';
+import TrashCanItem from './screens/items/containers/TrashCan';
+import WoodenChestItem from './screens/items/containers/WoodenChest';
+import AwningRedBlocksItem from './screens/items/blockItems/AwningRedBlocks';
+import BrickBlocksItem from './screens/items/blockItems/BrickBlocks';
+import ClayRoofBlocksItem from './screens/items/blockItems/ClayRoofBlocks';
+import CobblestoneBlocksItem from './screens/items/blockItems/CobblestoneBlocks';
+import ConcreteBlocksItem from './screens/items/blockItems/ConcreteBlocks';
+import ConcreteFormBlocksItem from './screens/items/blockItems/ConcreteFormBlocks';
+import LandClaimBlocksItem from './screens/items/blockItems/LandClaimBlocks';
+import MetalReinforcedWoodBlocksItem from './screens/items/blockItems/MetalReinforcedWoodBlocks';
+import MetalTrussingItem from './screens/items/blockItems/MetalTrussing';
+import PouredReinforcedConcreteBlocksItem from './screens/items/blockItems/PouredReinforcedConcreteBlocks';
+import ReinforcedIronBlocksItem from './screens/items/blockItems/ReinforcedIronBlocks';
+import StainlessSteelBlocksItem from './screens/items/blockItems/StainlessSteelBlocks';
+import SteelBlocksItem from './screens/items/blockItems/SteelBlocks';
+import WoodBlocksItem from './screens/items/blockItems/WoodBlocks';
+import WoodenShinglesBlocksItem from './screens/items/blockItems/WoodenShinglesBlocks';
+import HayBaleItem from './screens/items/blockItems/HayBale';
+import AwningWedgeItem from './screens/items/otherMaterials/AwningWedge';
+import BrassFaucetv2Item from './screens/items/otherMaterials/BrassFaucetv2';
+import BrickPaverBlockItem from './screens/items/otherMaterials/BrickPaverBlock';
+import BulletproofGlassItem from './screens/items/otherMaterials/BulletproofGlass';
+import CementItem from './screens/items/otherMaterials/Cement';
+import CobblestoneWedgeItem from './screens/items/otherMaterials/CobblestoneWedge';
+import FarmPlotItem from './screens/items/otherMaterials/FarmPlot';
+import FluorescentLightItem from './screens/items/otherMaterials/FluorescentLight';
+import IndustrialLightItem from './screens/items/otherMaterials/IndustrialLight';
+import IndustrialLightBlubItem from './screens/items/otherMaterials/IndustrialLightBlub';
+import IronBarsItem from './screens/items/otherMaterials/IronBars';
+import IronLadderItem from './screens/items/otherMaterials/IronLadder';
+import MetalCatwalkItem from './screens/items/otherMaterials/MetalCatwalk';
+import MetalReinforcedWoodRampItem from './screens/items/otherMaterials/MetalReinforcedWoodRamp';
+import ReinforcedWoodRampItem from './screens/items/otherMaterials/ReinforcedWoodRamp';
+import ScrapIronRampItem from './screens/items/otherMaterials/ScrapIronRamp';
+import ShowerGlassBlockItem from './screens/items/otherMaterials/ShowerGlassBlock';
+import SolidRebarRampFrameItem from './screens/items/otherMaterials/SolidRebarRampFrame';
+import SteelLadderItem from './screens/items/otherMaterials/SteelLadder';
+import VenetianBlindsItem from './screens/items/otherMaterials/VenetianBlinds';
+import WoodCatwalkItem from './screens/items/otherMaterials/WoodCatwalk';
+import WoodRampItem from './screens/items/otherMaterials/WoodRamp';
+import WoodRampFrameItem from './screens/items/otherMaterials/WoodRampFrame';
+import WoodenLadderItem from './screens/items/otherMaterials/WoodenLadder';
 
 
 
@@ -245,7 +320,7 @@ export default function App() {
         <Stack.Screen name='CraftingScreen' component={CraftingScreen} />
         <Stack.Screen name='WorkstationsScreen' component={WorkstationsScreen} />
 
-          {/* Crafting screens */}
+          {/* Materials screens */}
 
         <Stack.Screen name='MaterialsScreen' component={MaterialsScreen} />
         <Stack.Screen name='WindowsScreen' component={WindowsScreen} />
@@ -261,6 +336,13 @@ export default function App() {
         <Stack.Screen name='ContainersScreen' component={ContainersScreen} />
         <Stack.Screen name='BlockItemsScreen' component={BlockItemsScreen} />
         <Stack.Screen name='OtherScreen' component={OtherScreen} />
+
+          {/* Weapons screens */}
+
+        <Stack.Screen name='WeaponsScreen' component={WeaponsScreen} />
+        <Stack.Screen name='ClubsScreen' component={ClubsScreen} />
+        <Stack.Screen name='SledgehammersScreen' component={SledgehammersScreen} />
+        <Stack.Screen name='SpearsScreen' component={SpearsScreen} />
 
           {/* Item/Hats screens */}
 
@@ -498,6 +580,99 @@ export default function App() {
         <Stack.Screen name='WoodenHatchItem' component={WoodenHatchItem} />
         <Stack.Screen name='WoodenHatchv2Item' component={WoodenHatchv2Item} />
         <Stack.Screen name='WoodenHatchv3Item' component={WoodenHatchv3Item} />
+
+          {/* Item/Materials/Furniture screens */}
+
+        <Stack.Screen name='AirConditionerItem' component={AirConditionerItem} />
+        <Stack.Screen name='BedrollItem' component={BedrollItem} />
+        <Stack.Screen name='BrassFaucetItem' component={BrassFaucetItem} />
+        <Stack.Screen name='WashingMachineItem' component={WashingMachineItem} />
+
+          {/* Item/Materials/Frames screens */}
+
+        <Stack.Screen name='WoodFrameItem' component={WoodFrameItem} />
+
+          {/* Item/Materials/Fencing screens */}
+
+        <Stack.Screen name='WoodFenceItem' component={WoodFenceItem} />
+
+          {/* Item/Materials/Doors screens */}
+
+        <Stack.Screen name='GarageDoorMetalItem' component={GarageDoorMetalItem} />
+        <Stack.Screen name='GarageDoorMetalv2Item' component={GarageDoorMetalv2Item} />
+        <Stack.Screen name='GarageDoorMetalv3Item' component={GarageDoorMetalv3Item} />
+        <Stack.Screen name='IronDoorItem' component={IronDoorItem} />
+        <Stack.Screen name='IronDoorv2Item' component={IronDoorv2Item} />
+        <Stack.Screen name='IronDoorv3Item' component={IronDoorv3Item} />
+        <Stack.Screen name='JailDoorItem' component={JailDoorItem} />
+        <Stack.Screen name='MetalReinforcedWoodenDoorItem' component={MetalReinforcedWoodenDoorItem} />
+        <Stack.Screen name='ReinforcedDrawbridgeItem' component={ReinforcedDrawbridgeItem} />
+        <Stack.Screen name='ReinforcedDrawbridgePoweredItem' component={ReinforcedDrawbridgePoweredItem} />
+        <Stack.Screen name='ReinforcedSecureWoodenDoorItem' component={ReinforcedSecureWoodenDoorItem} />
+        <Stack.Screen name='VaultDoorItem' component={VaultDoorItem} />
+        <Stack.Screen name='VaultDoorv2Item' component={VaultDoorv2Item} />
+        <Stack.Screen name='VaultDoorv3Item' component={VaultDoorv3Item} />
+        <Stack.Screen name='WoodDoorItem' component={WoodDoorItem} />
+
+          {/* Item/Materials/Containers screens */}
+
+        <Stack.Screen name='CupboardItem' component={CupboardItem} />
+        <Stack.Screen name='GreenDrawerItem' component={GreenDrawerItem} />
+        <Stack.Screen name='GunSafeItem' component={GunSafeItem} />
+        <Stack.Screen name='MailBoxItem' component={MailBoxItem} />
+        <Stack.Screen name='MailDropBox' component={MailDropBox} />
+        <Stack.Screen name='MicrowaveItem' component={MicrowaveItem} />
+        <Stack.Screen name='SecureStorageChestItem' component={SecureStorageChestItem} />
+        <Stack.Screen name='StorageBoxItem' component={StorageBoxItem} />
+        <Stack.Screen name='TrashCanItem' component={TrashCanItem} />
+        <Stack.Screen name='WoodenChestItem' component={WoodenChestItem} />
+
+          {/* Item/Materials/Blocks screens */}
+
+        <Stack.Screen name='AwningRedBlocksItem' component={AwningRedBlocksItem} />
+        <Stack.Screen name='BrickBlocksItem' component={BrickBlocksItem} />
+        <Stack.Screen name='ClayRoofBlocksItem' component={ClayRoofBlocksItem} />
+        <Stack.Screen name='CobblestoneBlocksItem' component={CobblestoneBlocksItem} />
+        <Stack.Screen name='ConcreteBlocksItem' component={ConcreteBlocksItem} />
+        <Stack.Screen name='ConcreteFormBlocksItem' component={ConcreteFormBlocksItem} />
+        <Stack.Screen name='LandClaimBlocksItem' component={LandClaimBlocksItem} />
+        <Stack.Screen name='MetalReinforcedWoodBlocksItem' component={MetalReinforcedWoodBlocksItem} />
+        <Stack.Screen name='MetalTrussingItem' component={MetalTrussingItem} />
+        <Stack.Screen name='PouredReinforcedConcreteBlocksItem' component={PouredReinforcedConcreteBlocksItem} />
+        <Stack.Screen name='ReinforcedIronBlocksItem' component={ReinforcedIronBlocksItem} />
+        <Stack.Screen name='StainlessSteelBlocksItem' component={StainlessSteelBlocksItem} />
+        <Stack.Screen name='SteelBlocksItem' component={SteelBlocksItem} />
+        <Stack.Screen name='WoodBlocksItem' component={WoodBlocksItem} />
+        <Stack.Screen name='WoodenShinglesBlocksItem' component={WoodenShinglesBlocksItem} />
+        <Stack.Screen name='HayBaleItem' component={HayBaleItem} />
+
+          {/* Item/Materials/Other Materials screens */}
+
+        <Stack.Screen name='AwningWedgeItem' component={AwningWedgeItem} />
+        <Stack.Screen name='BrassFaucetv2Item' component={BrassFaucetv2Item} />
+        <Stack.Screen name='BrickPaverBlockItem' component={BrickPaverBlockItem} />
+        <Stack.Screen name='BulletproofGlassItem' component={BulletproofGlassItem} />
+        <Stack.Screen name='CementItem' component={CementItem} />
+        <Stack.Screen name='CobblestoneWedgeItem' component={CobblestoneWedgeItem} />
+        <Stack.Screen name='FarmPlotItem' component={FarmPlotItem} />
+        <Stack.Screen name='FluorescentLightItem' component={FluorescentLightItem} />
+        <Stack.Screen name='IndustrialLightItem' component={IndustrialLightItem} />
+        <Stack.Screen name='IndustrialLightBlubItem' component={IndustrialLightBlubItem} />
+        <Stack.Screen name='IronBarsItem' component={IronBarsItem} />
+        <Stack.Screen name='IronLadderItem' component={IronLadderItem} />
+        <Stack.Screen name='MetalCatwalkItem' component={MetalCatwalkItem} />
+        <Stack.Screen name='MetalReinforcedWoodRampItem' component={MetalReinforcedWoodRampItem} />
+        <Stack.Screen name='ReinforcedWoodRampItem' component={ReinforcedWoodRampItem} />
+        <Stack.Screen name='ScrapIronRampItem' component={ScrapIronRampItem} />
+        <Stack.Screen name='ShowerGlassBlockItem' component={ShowerGlassBlockItem} />
+        <Stack.Screen name='SolidRebarRampFrameItem' component={SolidRebarRampFrameItem} />
+        <Stack.Screen name='SteelLadderItem' component={SteelLadderItem} />
+        <Stack.Screen name='VenetianBlindsItem' component={VenetianBlindsItem} />
+        <Stack.Screen name='WoodCatwalkItem' component={WoodCatwalkItem} />
+        <Stack.Screen name='WoodRampItem' component={WoodRampItem} />
+        <Stack.Screen name='WoodRampFrameItem' component={WoodRampFrameItem} />
+        <Stack.Screen name='WoodenLadderItem' component={WoodenLadderItem} />
+
 
           {/* Mechanics / descriptions / break downs -for- crafting, farming, food system, Zombies, electricity, game modes, heath, physics, stealth, Skill and Perks */}
 
