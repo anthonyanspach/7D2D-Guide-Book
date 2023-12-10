@@ -15,7 +15,7 @@ function WeaponsScreen({ navigation }) {
         <Button title="Spears Screen" onPress={() => navigation.navigate('SpearsScreen')} />
         <Button title="Knuckles Screen" onPress={() => navigation.navigate('KnucklesScreen')} />
         <Button title="Knives Screen" onPress={() => navigation.navigate('KnivesScreen')} />
-        <Button title="Batons Screen" onPress={() => navigation.navigate('BatonScreen')} />
+        <Button title="Batons Screen" onPress={() => navigation.navigate('BatonsScreen')} />
         <Button title="Bows Screen" onPress={() => navigation.navigate('BowsScreen')} />
         <Button title="Handguns & SMG Screen" onPress={() => navigation.navigate('HandgunsSMGScreen')} />
         <Button title="Shotguns Screen" onPress={() => navigation.navigate('ShotgunsScreen')} />

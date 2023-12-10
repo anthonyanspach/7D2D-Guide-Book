@@ -56,6 +56,13 @@ import WeaponsScreen from './screens/weapons/WeaponsScreen';
 import ClubsScreen from './screens/weapons/ClubsScreen';
 import SledgehammersScreen from './screens/weapons/SledgehammersScreen';
 import SpearsScreen from './screens/weapons/SpearsScreen';
+import KnucklesScreen from './screens/weapons/KnucklesScreen';
+import KnivesScreen from './screens/weapons/KnivesScreen';
+import BatonsScreen from './screens/weapons/BatonsScreen';
+import BowsScreen from './screens/weapons/BowsScreen';
+import HandgunsSMGScreen from './screens/weapons/HandgunsSMGScreen';
+import ShotgunsScreen from './screens/weapons/ShotgunsScreen';
+import MachineGunsScreen from './screens/weapons/MachineGunsScreen';
 
 {/*Item screen imports*/}
 
@@ -343,6 +350,13 @@ export default function App() {
         <Stack.Screen name='ClubsScreen' component={ClubsScreen} />
         <Stack.Screen name='SledgehammersScreen' component={SledgehammersScreen} />
         <Stack.Screen name='SpearsScreen' component={SpearsScreen} />
+        <Stack.Screen name='KnucklesScreen' component={KnucklesScreen} />
+        <Stack.Screen name='KnivesScreen' component={KnivesScreen} />
+        <Stack.Screen name='BatonsScreen' component={BatonsScreen} />
+        <Stack.Screen name='BowsScreen' component={BowsScreen} />
+        <Stack.Screen name='HandgunsSMGScreen' component={HandgunsSMGScreen} />
+        <Stack.Screen name='ShotgunsScreen' component={ShotgunsScreen} />
+        <Stack.Screen name='MachineGunsScreen' component={MachineGunsScreen} />
 
           {/* Item/Hats screens */}
 
