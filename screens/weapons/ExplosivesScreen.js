@@ -19,10 +19,10 @@ function ExplosivesScreen({ navigation }) {
         <Button title="Hub Cap Mine" onPress={() => navigation.navigate('HubCapMineItem')} />
         <Button title="Air Filter Land Mine" onPress={() => navigation.navigate('AirFilterLandMineItem')} />
         <Button title="Timed Charge" onPress={() => navigation.navigate('TimedChargeItem')} />
-        <Button title="Molotov Cocktail" onPress={() => navigation.navigate('MolotocCocktailItem')} />
+        <Button title="Molotov Cocktail" onPress={() => navigation.navigate('MolotovCocktailItem')} />
         <Button title="Pipe Bomb" onPress={() => navigation.navigate('PipeBombItem')} />
-        <Button title="Contact Grenade" onPress={() => navigation.navigate('ContactGrenageItem')} />
-        <Button title="Grenade" onPress={() => navigation.navigate('GrenadaItem')} />
+        <Button title="Contact Grenade" onPress={() => navigation.navigate('ContactGrenadeItem')} />
+        <Button title="Grenade" onPress={() => navigation.navigate('GrenadeItem')} />
         <Button title="Stick of Dynamite" onPress={() => navigation.navigate('StickofDynamiteItem')} />
       </View>
     );

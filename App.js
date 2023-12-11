@@ -302,6 +302,37 @@ import WoodenBowItem from './screens/items/bows/WoodenBow';
 import IronCrossbowItem from './screens/items/bows/IronCrossbow';
 import CompoundBowItem from './screens/items/bows/CompoundBow';
 import CompoundCrossbowItem from './screens/items/bows/CompoundCrossbow';
+import PipeShotgunItem from './screens/items/shotguns/PipeShotgun';
+import DoubleBarrelShotgunItem from './screens/items/shotguns/DoubleBarrelShotgun';
+import PumpShotgunItem from './screens/items/shotguns/PumpShotgun';
+import AutoShotgunItem from './screens/items/shotguns/AutoShotgun';
+import PipeMachineGunItem from './screens/items/machineGuns/PipeMachineGun';
+import AK47MachineGunItem from './screens/items/machineGuns/AK47MachineGun';
+import TacticalAssaultRifleItem from './screens/items/machineGuns/TacticalAssaultRifle';
+import M60MachineGunItem from './screens/items/machineGuns/M60MachineGun';
+import PipeRifleItem from './screens/items/rifles/PipeRifle';
+import HuntingRifleItem from './screens/items/rifles/HuntingRifle';
+import LeverActionRifleItem from './screens/items/rifles/LeverActionRifle';
+import SniperRifleItem from './screens/items/rifles/SniperRifle';
+import RoboticSledgeItem from './screens/items/roboticTurrets/RoboticSledge';
+import RoboticTurretItem from './screens/items/roboticTurrets/RoboticTurret';
+import RocketLauncherItem from './screens/items/explosives/RocketLauncher';
+import ExplodingArrowItem from './screens/items/explosives/ExplodingArrow';
+import ExplodingCrossbowBoltItem from './screens/items/explosives/ExplodingCrossbowBolt';
+import RustyBarrelItem from './screens/items/explosives/RustyBarrel';
+import TinLandMineItem from './screens/items/explosives/TinLandMine';
+import CookingPotMineItem from './screens/items/explosives/CookingPotMine';
+import HubCapMineItem from './screens/items/explosives/HubCapMine';
+import AirFilterLandMineItem from './screens/items/explosives/AirFilterLandMine';
+import TimedChargeItem from './screens/items/explosives/TimedCharge';
+import MolotovCocktailItem from './screens/items/explosives/MolotovCocktail';
+import PipeBombItem from './screens/items/explosives/PipeBomb';
+import ContactGrenadeItem from './screens/items/explosives/ContactGrenade';
+import GrenadeItem from './screens/items/explosives/Grenade';
+import StickofDynamiteItem from './screens/items/explosives/StickofDynamite';
+
+
+
 
 
 
@@ -748,9 +779,13 @@ export default function App() {
         <Stack.Screen name='PipeBatonItem' component={PipeBatonItem} />
         <Stack.Screen name='StunBatonItem' component={StunBatonItem} />
 
-        {/* Item/Weapons/Bows screens */}
+          {/* Item/Weapons/Bows screens */}
 
-
+        <Stack.Screen name='PrimitiveBowItem' component={PrimitiveBowItem} />
+        <Stack.Screen name='WoodenBowItem' component={WoodenBowItem} />
+        <Stack.Screen name='IronCrossbowItem' component={IronCrossbowItem} />
+        <Stack.Screen name='CompoundBowItem' component={CompoundBowItem} />
+        <Stack.Screen name='CompoundCrossbowItem' component={CompoundCrossbowItem} />
 
           {/* Item/Weapons/Handguns & SMG screens */}
 
@@ -762,27 +797,46 @@ export default function App() {
 
           {/* Item/Weapons/Shotguns screens */}
 
-        <Stack.Screen name='PrimitiveBowItem' component={PrimitiveBowItem} />
-        <Stack.Screen name='WoodenBowItem' component={WoodenBowItem} />
-        <Stack.Screen name='IronCrossbowItem' component={IronCrossbowItem} />
-        <Stack.Screen name='CompoundBowItem' component={CompoundBowItem} />
-        <Stack.Screen name='CompoundCrossbowItem' component={CompoundCrossbowItem} />
+        <Stack.Screen name='PipeShotgunItem' component={PipeShotgunItem} />
+        <Stack.Screen name='DoubleBarrelShotgunItem' component={DoubleBarrelShotgunItem} />
+        <Stack.Screen name='PumpShotgunItem' component={PumpShotgunItem} />
+        <Stack.Screen name='AutoShotgunItem' component={AutoShotgunItem} />
 
-        {/* Item/Weapons/Machine Guns screens */}
+          {/* Item/Weapons/Machine Guns screens */}
 
+        <Stack.Screen name='PipeMachineGunItem' component={PipeMachineGunItem} />
+        <Stack.Screen name='AK47MachineGunItem' component={AK47MachineGunItem} />
+        <Stack.Screen name='TacticalAssaultRifleItem' component={TacticalAssaultRifleItem} />
+        <Stack.Screen name='M60MachineGunItem' component={M60MachineGunItem} />
 
+          {/* Item/Weapons/Rifles screens */}
 
-        {/* Item/Weapons/Rifles screens */}
+        <Stack.Screen name='PipeRifleItem' component={PipeRifleItem} />
+        <Stack.Screen name='HuntingRifleItem' component={HuntingRifleItem} />
+        <Stack.Screen name='LeverActionRifleItem' component={LeverActionRifleItem} />
+        <Stack.Screen name='SniperRifleItem' component={SniperRifleItem} />
 
+          {/* Item/Weapons/Robotic Turrets screens */}
 
+        <Stack.Screen name='RoboticSledgeItem' component={RoboticSledgeItem} />
+        <Stack.Screen name='RoboticTurretItem' component={RoboticTurretItem} />
 
-        {/* Item/Weapons/Robotic Turrets screens */}
+          {/* Item/Weapons/Explosives screens */}
 
-
-
-        {/* Item/Weapons/Explosives screens */}
-
-
+        <Stack.Screen name='RocketLauncherItem' component={RocketLauncherItem} />
+        <Stack.Screen name='ExplodingArrowItem' component={ExplodingArrowItem} />
+        <Stack.Screen name='ExplodingCrossbowBoltItem' component={ExplodingCrossbowBoltItem} />
+        <Stack.Screen name='RustyBarrelItem' component={RustyBarrelItem} />
+        <Stack.Screen name='TinLandMineItem' component={TinLandMineItem} />
+        <Stack.Screen name='CookingPotMineItem' component={CookingPotMineItem} />
+        <Stack.Screen name='HubCapMineItem' component={HubCapMineItem} />
+        <Stack.Screen name='AirFilterLandMineItem' component={AirFilterLandMineItem} />
+        <Stack.Screen name='TimedChargeItem' component={TimedChargeItem} />
+        <Stack.Screen name='MolotovCocktailItem' component={MolotovCocktailItem} />
+        <Stack.Screen name='PipeBombItem' component={PipeBombItem} />
+        <Stack.Screen name='ContactGrenadeItem' component={ContactGrenadeItem} />
+        <Stack.Screen name='GrenadeItem' component={GrenadeItem} />
+        <Stack.Screen name='StickofDynamiteItem' component={StickofDynamiteItem} />
 
 
           {/* Mechanics / descriptions / break downs -for- crafting, farming, food system, Zombies, electricity, game modes, heath, physics, stealth, Skill and Perks */}

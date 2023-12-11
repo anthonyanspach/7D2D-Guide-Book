@@ -11,7 +11,7 @@ function ShotgunsScreen({ navigation }) {
       <View>
         <Text>Weapons Screen</Text>
         <Button title="Pipe Shotgun" onPress={() => navigation.navigate('PipeShotgunItem')} />
-        <Button title="Double Barrel Shotgun" onPress={() => navigation.navigate('DoubleBarrelShotgun')} />
+        <Button title="Double Barrel Shotgun" onPress={() => navigation.navigate('DoubleBarrelShotgunItem')} />
         <Button title="Pump Shotgun" onPress={() => navigation.navigate('PumpShotgunItem')} />
         <Button title="Auto Shotgun" onPress={() => navigation.navigate('AutoShotgunItem')} />
     </View>
