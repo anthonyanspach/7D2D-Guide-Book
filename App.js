@@ -63,6 +63,9 @@ import BowsScreen from './screens/weapons/BowsScreen';
 import HandgunsSMGScreen from './screens/weapons/HandgunsSMGScreen';
 import ShotgunsScreen from './screens/weapons/ShotgunsScreen';
 import MachineGunsScreen from './screens/weapons/MachineGunsScreen';
+import RiflesScreen from './screens/weapons/RiflesScreen';
+import RoboticTurretsScreen from './screens/weapons/RoboticTurretsScreen';
+import ExplosivesScreen from './screens/weapons/ExplosivesScreen';
 
 {/*Item screen imports*/}
 
@@ -274,6 +277,31 @@ import WoodCatwalkItem from './screens/items/otherMaterials/WoodCatwalk';
 import WoodRampItem from './screens/items/otherMaterials/WoodRamp';
 import WoodRampFrameItem from './screens/items/otherMaterials/WoodRampFrame';
 import WoodenLadderItem from './screens/items/otherMaterials/WoodenLadder';
+import WoodenClubItem from './screens/items/clubs/WoodenClubItem';
+import CandyCaneClubItem from './screens/items/clubs/CandyCaneClub';
+import SteelClubItem from './screens/items/clubs/SteelClub';
+import BaseballBatItem from './screens/items/clubs/BaseballBat';
+import StoneSledgehammerItem from './screens/items/sledgehammers/StoneSledgehammer';
+import IronSledgehammerItem from './screens/items/sledgehammers/IronSledgehammer';
+import SteelSledgehammerItem from './screens/items/sledgehammers/SteelSledgehammer';
+import StoneSpearItem from './screens/items/spears/StoneSpear';
+import IronSpearItem from './screens/items/spears/IronSpear';
+import SteelSpearItem from './screens/items/spears/SteelSpear';
+import KnuckleWrapsItem from './screens/items/knuckles/KnuckleWrap';
+import IronKnucklesItem from './screens/items/knuckles/IronKnuckles';
+import SteelKnucklesItem from './screens/items/knuckles/SteelKnuckles';
+import PipeBatonItem from './screens/items/batons/PipeBaton';
+import StunBatonItem from './screens/items/batons/StunBaton';
+import PipePistolItem from './screens/items/handgunsSMG/PipePistol';
+import PistolItem from './screens/items/handgunsSMG/Pistol';
+import A44MagnumItem from './screens/items/handgunsSMG/A44Magnum';
+import A44DesertVultureItem from './screens/items/handgunsSMG/A44DesertVulture';
+import SMGItem from './screens/items/handgunsSMG/SMG';
+import PrimitiveBowItem from './screens/items/bows/PrimitiveBow';
+import WoodenBowItem from './screens/items/bows/WoodenBow';
+import IronCrossbowItem from './screens/items/bows/IronCrossbow';
+import CompoundBowItem from './screens/items/bows/CompoundBow';
+import CompoundCrossbowItem from './screens/items/bows/CompoundCrossbow';
 
 
 
@@ -357,6 +385,9 @@ export default function App() {
         <Stack.Screen name='HandgunsSMGScreen' component={HandgunsSMGScreen} />
         <Stack.Screen name='ShotgunsScreen' component={ShotgunsScreen} />
         <Stack.Screen name='MachineGunsScreen' component={MachineGunsScreen} />
+        <Stack.Screen name='RiflesScreen' component={RiflesScreen} />
+        <Stack.Screen name='RoboticTurretsScreen' component={RoboticTurretsScreen} />
+        <Stack.Screen name='ExplosivesScreen' component={ExplosivesScreen} />
 
           {/* Item/Hats screens */}
 
@@ -686,6 +717,72 @@ export default function App() {
         <Stack.Screen name='WoodRampItem' component={WoodRampItem} />
         <Stack.Screen name='WoodRampFrameItem' component={WoodRampFrameItem} />
         <Stack.Screen name='WoodenLadderItem' component={WoodenLadderItem} />
+
+          {/* Item/Weapons/Clubs screens */}
+
+        <Stack.Screen name='WoodenClubItem' component={WoodenClubItem} />
+        <Stack.Screen name='CandyCaneClubItem' component={CandyCaneClubItem} />
+        <Stack.Screen name='SteelClubItem' component={SteelClubItem} />
+        <Stack.Screen name='BaseballBatItem' component={BaseballBatItem} />
+
+          {/* Item/Weapons/Sledgehammers screens */}
+
+        <Stack.Screen name='StoneSledgehammerItem' component={StoneSledgehammerItem} />
+        <Stack.Screen name='IronSledgehammerItem' component={IronSledgehammerItem} />
+        <Stack.Screen name='SteelSledgehammerItem' component={SteelSledgehammerItem} />
+
+          {/* Item/Weapons/Spears screens */}
+
+        <Stack.Screen name='StoneSpearItem' component={StoneSpearItem} />
+        <Stack.Screen name='IronSpearItem' component={IronSpearItem} />
+        <Stack.Screen name='SteelSpearItem' component={SteelSpearItem} />
+
+          {/* Item/Weapons/Knickles screens */}
+
+        <Stack.Screen name='KnuckleWrapsItem' component={KnuckleWrapsItem} />
+        <Stack.Screen name='IronKnucklesItem' component={IronKnucklesItem} />
+        <Stack.Screen name='SteelKnucklesItem' component={SteelKnucklesItem} />
+
+          {/* Item/Weapons/Batons screens */}
+
+        <Stack.Screen name='PipeBatonItem' component={PipeBatonItem} />
+        <Stack.Screen name='StunBatonItem' component={StunBatonItem} />
+
+        {/* Item/Weapons/Bows screens */}
+
+
+
+          {/* Item/Weapons/Handguns & SMG screens */}
+
+        <Stack.Screen name='PipePistolItem' component={PipePistolItem} />
+        <Stack.Screen name='PistolItem' component={PistolItem} />
+        <Stack.Screen name='A44MagnumItem' component={A44MagnumItem} />
+        <Stack.Screen name='A44DesertVultureItem' component={A44DesertVultureItem} />
+        <Stack.Screen name='SMGItem' component={SMGItem} />
+
+          {/* Item/Weapons/Shotguns screens */}
+
+        <Stack.Screen name='PrimitiveBowItem' component={PrimitiveBowItem} />
+        <Stack.Screen name='WoodenBowItem' component={WoodenBowItem} />
+        <Stack.Screen name='IronCrossbowItem' component={IronCrossbowItem} />
+        <Stack.Screen name='CompoundBowItem' component={CompoundBowItem} />
+        <Stack.Screen name='CompoundCrossbowItem' component={CompoundCrossbowItem} />
+
+        {/* Item/Weapons/Machine Guns screens */}
+
+
+
+        {/* Item/Weapons/Rifles screens */}
+
+
+
+        {/* Item/Weapons/Robotic Turrets screens */}
+
+
+
+        {/* Item/Weapons/Explosives screens */}
+
+
 
 
           {/* Mechanics / descriptions / break downs -for- crafting, farming, food system, Zombies, electricity, game modes, heath, physics, stealth, Skill and Perks */}

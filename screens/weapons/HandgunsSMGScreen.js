@@ -12,8 +12,8 @@ function HandgunsSMGScreen({ navigation }) {
         <Text>Weapons Screen</Text>
         <Button title="Pipe Pistol" onPress={() => navigation.navigate('PipePistolItem')} />
         <Button title="Pistol" onPress={() => navigation.navigate('PistolItem')} />
-        <Button title=".44 Magnum" onPress={() => navigation.navigate('44MagnumItem')} />
-        <Button title=".44 Desert Vulture" onPress={() => navigation.navigate('44DesertVultureItem')} />
+        <Button title=".44 Magnum" onPress={() => navigation.navigate('A44MagnumItem')} />
+        <Button title=".44 Desert Vulture" onPress={() => navigation.navigate('A44DesertVultureItem')} />
         <Button title="SMG-5" onPress={() => navigation.navigate('SMGItem')} />
       </View>
     );
