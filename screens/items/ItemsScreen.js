@@ -17,7 +17,7 @@ function ItemsScreen({ navigation }) {
         <Button title="Weapons" onPress={() => navigation.navigate('WeaponsScreen')} />
         <Button title="Traps & Turrets" onPress={() => navigation.navigate('TrapsTurretsScreen')} />
         <Button title="Resources" onPress={() => navigation.navigate('ResourcesScreen')} />
-        <Button title="Food" onPress={() => navigation.navigate('FoodScreen')} />
+        <Button title="Food and Drink" onPress={() => navigation.navigate('FoodDrinksScreen')} />
       </View>
     );
   }

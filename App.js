@@ -66,6 +66,12 @@ import MachineGunsScreen from './screens/weapons/MachineGunsScreen';
 import RiflesScreen from './screens/weapons/RiflesScreen';
 import RoboticTurretsScreen from './screens/weapons/RoboticTurretsScreen';
 import ExplosivesScreen from './screens/weapons/ExplosivesScreen';
+import TrapsTurretsScreen from './screens/trapsTurrets/TrapsTurretsScreen';
+import FoodDrinksScreen from './screens/foodDrinks/FoodDrinksScreen';
+import IngredientsScreen from './screens/foodDrinks/IngredientsScreen';
+import CannedFoodsScreen from './screens/foodDrinks/CannedFoodsScreen';
+import CookedFoodsScreen from './screens/foodDrinks/CookedFoodsScreen';
+import DrinksScreen from './screens/foodDrinks/DrinksScreen';
 
 {/*Item screen imports*/}
 
@@ -330,6 +336,40 @@ import PipeBombItem from './screens/items/explosives/PipeBomb';
 import ContactGrenadeItem from './screens/items/explosives/ContactGrenade';
 import GrenadeItem from './screens/items/explosives/Grenade';
 import StickofDynamiteItem from './screens/items/explosives/StickofDynamite';
+import BarbedFenceWireItem from './screens/items/trapsTurrets/BarbedFenceWireItem';
+import BladeTrapItem from './screens/items/trapsTurrets/BladeTrapItem';
+import DartTrapItem from './screens/items/trapsTurrets/DartTrapItem';
+import ElectricFencePostItem from './screens/items/trapsTurrets/ElecctricFencePostItem';
+import IronSpikesItem from './screens/items/trapsTurrets/IronSpikesItem';
+import ShotgunAutoTurretItem from './screens/items/trapsTurrets/ShotgunAutoTurretItem';
+import SMGAutoTurretItem from './screens/items/trapsTurrets/SMGAutoTurretItem';
+import WoodSpikesItem from './screens/items/trapsTurrets/WoodSpikesItem';
+import AnimalFatItem from './screens/items/foodDrinks/AnimalFatItem';
+import BlueberriesItem from './screens/items/foodDrinks/BlueberriesItem';
+import EarofCornItem from './screens/items/foodDrinks/EarofCornItem';
+import EarofSuperCornItem from './screens/items/foodDrinks/EarofSuperCornItem';
+import EggItem from './screens/items/foodDrinks/EggItem';
+import MushroomsItem from './screens/items/foodDrinks/MushroomsItem';
+import PotatoItem from './screens/items/foodDrinks/PotatoItem';
+import PumpkinItem from './screens/items/foodDrinks/PumpkinItem';
+import RawMeatItem from './screens/items/foodDrinks/RawMeatItem';
+import RottingFleshItem from './screens/items/foodDrinks/RottingFleshItem';
+import YuccaFruitItem from './screens/items/foodDrinks/YuccaFruitItem';
+import CanCatFoodItem from './screens/items/foodDrinks/CanCatFoodItem';
+import CanChiliItem from './screens/items/foodDrinks/CanChiliItem';
+import CanDogFoodItem from './screens/items/foodDrinks/CanDogFoodItem';
+import CanMisoItem from './screens/items/foodDrinks/CanMisoItem';
+import CanPastaItem from './screens/items/foodDrinks/CanPastaItem';
+import CanPearsItem from './screens/items/foodDrinks/CanPearsItem';
+import CanPeasItem from './screens/items/foodDrinks/CanPeasItem';
+import CanSalmonItem from './screens/items/foodDrinks/CanSalmonItem';
+import CanShamItem from './screens/items/foodDrinks/CanShamItem';
+import CanStockItem from './screens/items/foodDrinks/CanStockItem';
+import CanTunaItem from './screens/items/foodDrinks/CanTunaItem';
+import ChickenRationItem from './screens/items/foodDrinks/ChickenRationItem';
+import ChickenSoupItem from './screens/items/foodDrinks/ChickenSoupItem';
+import LambRationItem from './screens/items/foodDrinks/LambRationItem';
+import LargeBeefRationItem from './screens/items/foodDrinks/LargeBeefRationItem';
 
 
 
@@ -347,6 +387,7 @@ export default function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="StartingGuide" component={StartingGuide} />
         <Stack.Screen name="ItemsScreen" component={ItemsScreen} />
+        <Stack.Screen name="TrapsTurretsScreen" component={TrapsTurretsScreen} />
         
 
           {/* Tools screens */}
@@ -419,6 +460,15 @@ export default function App() {
         <Stack.Screen name='RiflesScreen' component={RiflesScreen} />
         <Stack.Screen name='RoboticTurretsScreen' component={RoboticTurretsScreen} />
         <Stack.Screen name='ExplosivesScreen' component={ExplosivesScreen} />
+
+          {/* Item/FoodDrinks screens */}
+
+        <Stack.Screen name='FoodDrinksScreen' component={FoodDrinksScreen} />
+        <Stack.Screen name='IngredientsScreen' component={IngredientsScreen} />
+        <Stack.Screen name='CannedFoodsScreen' component={CannedFoodsScreen} />
+        <Stack.Screen name='CookedFoodsScreen' component={CookedFoodsScreen} />
+        <Stack.Screen name='DrinksScreen' component={DrinksScreen} />
+        
 
           {/* Item/Hats screens */}
 
@@ -837,6 +887,53 @@ export default function App() {
         <Stack.Screen name='ContactGrenadeItem' component={ContactGrenadeItem} />
         <Stack.Screen name='GrenadeItem' component={GrenadeItem} />
         <Stack.Screen name='StickofDynamiteItem' component={StickofDynamiteItem} />
+
+          {/* Item/TrapsTurrets Item screens */}
+
+        <Stack.Screen name='BarbedFenceWireItem' component={BarbedFenceWireItem} />
+        <Stack.Screen name='BladeTrapItem' component={BladeTrapItem} />
+        <Stack.Screen name='DartTrapItem' component={DartTrapItem} />
+        <Stack.Screen name='ElectricFencePostItem' component={ElectricFencePostItem} />
+        <Stack.Screen name='IronSpikesItem' component={IronSpikesItem} />
+        <Stack.Screen name='ShotgunAutoTurretItem' component={ShotgunAutoTurretItem} />
+        <Stack.Screen name='SMGAutoTurretItem' component={SMGAutoTurretItem} />
+        <Stack.Screen name='WoodSpikesItem' component={WoodSpikesItem} />
+
+          {/* Item/FoodDrinks/ Ingridients Item screens */}
+
+        <Stack.Screen name='AnimalFatItem' component={AnimalFatItem} />
+        <Stack.Screen name='BlueberriesItem' component={BlueberriesItem} />
+        <Stack.Screen name='EarofCornItem' component={EarofCornItem} />
+        <Stack.Screen name='EarofSuperCornItem' component={EarofSuperCornItem} />
+        <Stack.Screen name='EggItem' component={EggItem} />
+        <Stack.Screen name='MushroomsItem' component={MushroomsItem} />
+        <Stack.Screen name='PotatoItem' component={PotatoItem} />
+        <Stack.Screen name='PumpkinItem' component={PumpkinItem} />
+        <Stack.Screen name='RawMeatItem' component={RawMeatItem} />
+        <Stack.Screen name='RottingFleshItem' component={RottingFleshItem} />
+        <Stack.Screen name='YuccaFruitItem' component={YuccaFruitItem} />
+
+          {/* Item/FoodDrinks/ Canned foods Item screens */}
+
+        <Stack.Screen name='CanCatFoodItem' component={CanCatFoodItem} />
+        <Stack.Screen name='CanChiliItem' component={CanChiliItem} />
+        <Stack.Screen name='CanDogFoodItem' component={CanDogFoodItem} />
+        <Stack.Screen name='CanMisoItem' component={CanMisoItem} />
+        <Stack.Screen name='CanPastaItem' component={CanPastaItem} />
+        <Stack.Screen name='CanPearsItem' component={CanPearsItem} />
+        <Stack.Screen name='CanPeasItem' component={CanPeasItem} />
+        <Stack.Screen name='CanSalmonItem' component={CanSalmonItem} />
+        <Stack.Screen name='CanShamItem' component={CanShamItem} />
+        <Stack.Screen name='CanStockItem' component={CanStockItem} />
+        <Stack.Screen name='CanTunaItem' component={CanTunaItem} />
+        <Stack.Screen name='ChickenRationItem' component={ChickenRationItem} />
+        <Stack.Screen name='ChickenSoupItem' component={ChickenSoupItem} />
+        <Stack.Screen name='LambRationItem' component={LambRationItem} />
+        <Stack.Screen name='LargeBeefRationItem' component={LargeBeefRationItem} />
+
+        {/* Item/FoodDrinks/ Cooked foods Item screens */}
+
+        {/* Item/FoodDrinks/ Drinks Item screens */}
 
 
           {/* Mechanics / descriptions / break downs -for- crafting, farming, food system, Zombies, electricity, game modes, heath, physics, stealth, Skill and Perks */}
