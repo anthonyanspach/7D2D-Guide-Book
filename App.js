@@ -72,6 +72,22 @@ import IngredientsScreen from './screens/foodDrinks/IngredientsScreen';
 import CannedFoodsScreen from './screens/foodDrinks/CannedFoodsScreen';
 import CookedFoodsScreen from './screens/foodDrinks/CookedFoodsScreen';
 import DrinksScreen from './screens/foodDrinks/DrinksScreen';
+import ResourcesScreen from './screens/resources/ResourcesScreen';
+import MechanicsScreen from './screens/mechanics/MechanicsScreen';
+import SurvivalScreen from './screens/mechanics/SurvivalScreen';
+import CombatDamageScreen from './screens/mechanics/CombatDamageScreen';
+import LevelingSystemScreen from './screens/mechanics/LevelingSystemScreen';
+import CraftingSystemScreen from './screens/mechanics/CraftingSystemScreen';
+import RepairingItemScreen from './screens/mechanics/RepairingItemScreen';
+import ItemSystemScreen from './screens/mechanics/ItemSystemScreen';
+import MenuInterfaceScreen from './screens/mechanics/MenuInterfaceScreen';
+import ResourcesSystemScreen from './screens/mechanics/ResourcesSystemScreen';
+import ConstructingBuildingsScreen from './screens/mechanics/ConstructingBuildingsScreen';
+import AmbienceSystemScreen from './screens/mechanics/AmbienceSystemScreen';
+import ZombiesScreen from './screens/mechanics/ZombiesScreen';
+import ElectricityScreen from './screens/mechanics/ElectricityScreen';
+import HealthSystemScreen from './screens/mechanics/HealthSystemScreen';
+import MiningSystemScreen from './screens/mechanics/MiningSystemScreen';
 
 {/*Item screen imports*/}
 
@@ -370,10 +386,42 @@ import ChickenRationItem from './screens/items/foodDrinks/ChickenRationItem';
 import ChickenSoupItem from './screens/items/foodDrinks/ChickenSoupItem';
 import LambRationItem from './screens/items/foodDrinks/LambRationItem';
 import LargeBeefRationItem from './screens/items/foodDrinks/LargeBeefRationItem';
-
-
-
-
+import BoiledEggItem from './screens/items/foodDrinks/BoiledEggItem';
+import BoiledMeatItem from './screens/items/foodDrinks/BoiledEggItem';
+import CharredMeatItem from './screens/items/foodDrinks/CharredMeatItem';
+import CornBreadItem from './screens/items/foodDrinks/CornBreadItem';
+import GrilledCornItem from './screens/items/foodDrinks/GrilledCornItem';
+import GrilledMeatItem from './screens/items/foodDrinks/GrilledMeatItem';
+import BlueberryPieItem from './screens/items/foodDrinks/BlueberryPieItem';
+import MeatStewItem from './screens/items/foodDrinks/MeatStewItem';
+import PumpkinBreadItem from './screens/items/foodDrinks/PumpkinBreadItem';
+import PumpkinCheeseCakeItem from './screens/items/foodDrinks/PumpkinCheeseCakeItem';
+import PumpkinPieItem from './screens/items/foodDrinks/PumpkinPieItem';
+import SteakPotatoMealItem from './screens/items/foodDrinks/SteakPotatoMealItem';
+import VegetableStewItem from './screens/items/foodDrinks/VegetableStewItem';
+import ChiliDogItem from './screens/items/foodDrinks/ChiliDogItem';
+import FishTacosItem from './screens/items/foodDrinks/FishTacosItem';
+import GumboStewItem from './screens/items/foodDrinks/GumboStewItem';
+import HoboStewItem from './screens/items/foodDrinks/HoboStewItem';
+import ShamChowderItem from './screens/items/foodDrinks/ShamChowderItem';
+import ShepardsPieItem from './screens/items/foodDrinks/ShepardsPieItem';
+import SpaghettiItem from './screens/items/foodDrinks/SpaghettiItem';
+import TunaFishGravyToastItem from './screens/items/foodDrinks/TunaFishGravyToastItem';
+import CoffeeItem from './screens/items/foodDrinks/CoffeeItem';
+import GoldenrodTeaItem from './screens/items/foodDrinks/GoldenrodTeaItem';
+import MurkyWaterItem from './screens/items/foodDrinks/MurkyWaterItem';
+import RedTeaItem from './screens/items/foodDrinks/RedTeaItem';
+import WaterItem from './screens/items/foodDrinks/WaterItem';
+import YuccaJuiceItem from './screens/items/foodDrinks/YuccaJuiceItem';
+import BeerItem from './screens/items/foodDrinks/BeerItem';
+import BlackstrapCoffeeItem from './screens/items/foodDrinks/BlackStrapCoffeeItem';
+import MegaCrushItem from './screens/items/foodDrinks/MegaCrushItem';
+import PureMineralWaterItem from './screens/items/foodDrinks/PureMineralWaterItem';
+import YuccaJuiceSmoothieItem from './screens/items/foodDrinks/YuccaJuiceSmoothieItem';
+import GrandpaAwesomeSauceItem from './screens/items/foodDrinks/GrandpaAwesomeSauceItem';
+import GrandpaFergitElixirItem from './screens/items/foodDrinks/GrandpaFergitElixirItem';
+import GrandpaLearnElixirItem from './screens/items/foodDrinks/GrandpaLearnElixirItem';
+import GrandpaMoonshineItem from './screens/items/foodDrinks/GrandpaMoonshineItem';
 
 
 
@@ -460,6 +508,10 @@ export default function App() {
         <Stack.Screen name='RiflesScreen' component={RiflesScreen} />
         <Stack.Screen name='RoboticTurretsScreen' component={RoboticTurretsScreen} />
         <Stack.Screen name='ExplosivesScreen' component={ExplosivesScreen} />
+
+        {/* Resources screens */}
+
+        <Stack.Screen name='ResourcesScreen' component={ResourcesScreen} />
 
           {/* Item/FoodDrinks screens */}
 
@@ -931,16 +983,93 @@ export default function App() {
         <Stack.Screen name='LambRationItem' component={LambRationItem} />
         <Stack.Screen name='LargeBeefRationItem' component={LargeBeefRationItem} />
 
-        {/* Item/FoodDrinks/ Cooked foods Item screens */}
+          {/* Item/FoodDrinks/ Cooked foods Item screens */}
 
-        {/* Item/FoodDrinks/ Drinks Item screens */}
+            {/* Early Game */}
+
+        <Stack.Screen name='BoiledEggItem' component={BoiledEggItem} />
+        <Stack.Screen name='BoiledMeatItem' component={BoiledMeatItem} />
+        <Stack.Screen name='CharredMeatItem' component={CharredMeatItem} />
+        <Stack.Screen name='CornBreadItem' component={CornBreadItem} />
+        <Stack.Screen name='GrilledCornItem' component={GrilledCornItem} />
+        <Stack.Screen name='GrilledMeatItem' component={GrilledMeatItem} />
+
+            {/* Mid Game */}
+
+        <Stack.Screen name='BlueberryPieItem' component={BlueberryPieItem} />
+        <Stack.Screen name='MeatStewItem' component={MeatStewItem} />
+        <Stack.Screen name='PumpkinBreadItem' component={PumpkinBreadItem} />
+        <Stack.Screen name='PumpkinCheeseCakeItem' component={PumpkinCheeseCakeItem} />
+        <Stack.Screen name='PumpkinPieItem' component={PumpkinPieItem} />
+        <Stack.Screen name='SteakPotatoMealItem' component={SteakPotatoMealItem} />
+        <Stack.Screen name='VegetableStewItem' component={VegetableStewItem} />
+
+            {/* Late Game */}
+
+        <Stack.Screen name='ChiliDogItem' component={ChiliDogItem} />
+        <Stack.Screen name='FishTacosItem' component={FishTacosItem} />
+        <Stack.Screen name='GumboStewItem' component={GumboStewItem} />
+        <Stack.Screen name='HoboStewItem' component={HoboStewItem} />
+        <Stack.Screen name='ShamChowderItem' component={ShamChowderItem} />
+        <Stack.Screen name='ShepardsPieItem' component={ShepardsPieItem} />
+        <Stack.Screen name='SpaghettiItem' component={SpaghettiItem} />
+        <Stack.Screen name='TunaFishGravyToastItem' component={TunaFishGravyToastItem} />
+
+          {/* Item/FoodDrinks/ Drinks Item screens */}
+
+            {/* Early Game */}
+
+        <Stack.Screen name='CoffeeItem' component={CoffeeItem} />
+        <Stack.Screen name='GoldenrodTeaItem' component={GoldenrodTeaItem} />
+        <Stack.Screen name='MurkyWaterItem' component={MurkyWaterItem} />
+        <Stack.Screen name='RedTeaItem' component={RedTeaItem} />
+        <Stack.Screen name='WaterItem' component={WaterItem} />
+        <Stack.Screen name='YuccaJuiceItem' component={YuccaJuiceItem} />
+            {/* Mid Game */}
+
+        <Stack.Screen name='BeerItem' component={BeerItem} />
+        <Stack.Screen name='BlackstrapCoffeeItem' component={BlackstrapCoffeeItem} />
+        <Stack.Screen name='MegaCrushItem' component={MegaCrushItem} />
+        <Stack.Screen name='PureMineralWaterItem' component={PureMineralWaterItem} />
+        <Stack.Screen name='YuccaJuiceSmoothieItem' component={YuccaJuiceSmoothieItem} />
+
+            {/* Late Game */}
+
+        <Stack.Screen name='GrandpaAwesomeSauceItem' component={GrandpaAwesomeSauceItem} />
+        <Stack.Screen name='GrandpaFergitElixirItem' component={GrandpaFergitElixirItem} />
+        <Stack.Screen name='GrandpaLearnElixirItem' component={GrandpaLearnElixirItem} />
+        <Stack.Screen name='GrandpaMoonshineItem' component={GrandpaMoonshineItem} />
+
+          {/* Mechanics Screen */}
+
+        <Stack.Screen name='MechanicsScreen' component={MechanicsScreen} />
+        <Stack.Screen name='SurvivalScreen' component={SurvivalScreen} />
+        <Stack.Screen name='CombatDamageScreen' component={CombatDamageScreen} />
+        <Stack.Screen name='LevelingSystemScreen' component={LevelingSystemScreen} />
+        <Stack.Screen name='CraftingSystemScreen' component={CraftingSystemScreen} />
+        <Stack.Screen name='RepairingItemScreen' component={RepairingItemScreen} />
+        <Stack.Screen name='ItemSystemScreen' component={ItemSystemScreen} />
+        <Stack.Screen name='MenuInterfaceScreen' component={MenuInterfaceScreen} />
+        <Stack.Screen name='ResourcesSystemScreen' component={ResourcesSystemScreen} />
+        <Stack.Screen name='ConstructingBuildingsScreen' component={ConstructingBuildingsScreen} />
+        <Stack.Screen name='AmbienceSystemScreen' component={AmbienceSystemScreen} />
+        <Stack.Screen name='ZombiesScreen' component={ZombiesScreen} />
+        <Stack.Screen name='ElectricityScreen' component={ElectricityScreen} />
+        <Stack.Screen name='HealthSystemScreen' component={HealthSystemScreen} />
+        <Stack.Screen name='MiningSystemScreen' component={MiningSystemScreen} />
 
 
-          {/* Mechanics / descriptions / break downs -for- crafting, farming, food system, Zombies, electricity, game modes, heath, physics, stealth, Skill and Perks */}
-
-
-          {/* Nav map _and other?_ Locations */}
-
+          {/* 
+            ### All the Screen and Items Info and descriptions
+            
+            ### More Screens?
+              Durability
+              Structual Integrity (may already be apart of another mechanic)
+              Skills and Perks List (with Button on mechanics page)
+              Stealth?
+              Navs Locations
+              
+                */}
 
       </Stack.Navigator>
     </NavigationContainer>

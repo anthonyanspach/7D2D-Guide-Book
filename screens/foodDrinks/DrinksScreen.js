@@ -16,7 +16,7 @@ function DrinksScreen({ navigation }) {
         <Button title="Murky Water" onPress={() => navigation.navigate('MurkyWaterItem')} />
         <Button title="Red Tea" onPress={() => navigation.navigate('RedTeaItem')} />
         <Button title="Water" onPress={() => navigation.navigate('WaterItem')} />
-        <Button title="Yucca Juice" onPress={() => navigation.navigate('YuccaJuice')} />
+        <Button title="Yucca Juice" onPress={() => navigation.navigate('YuccaJuiceItem')} />
         <Text>Mid Game</Text>
         <Button title="Beer" onPress={() => navigation.navigate('BeerItem')} />
         <Button title="Blackstrap Coffee" onPress={() => navigation.navigate('BlackstrapCoffeeItem')} />
