@@ -9,7 +9,16 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function MailBoxItem({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Mail Box Info</Text>
+
+        <Text>Description:</Text>
+        <Text>Mail Boxes can be found in Diersville near the houses. And can spawn in Random World Generation near houses as well.</Text>
+
+        <Text>Crafting:</Text>
+        <Text>None</Text>
+
+        <Text>Unlock Options:</Text>
+        <Text>None / Only Found</Text>
       </View>
     );
   }

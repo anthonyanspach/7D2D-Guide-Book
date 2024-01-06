@@ -9,7 +9,16 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function JailDoorItem({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Jail Door Info</Text>
+
+        <Text>Description:</Text>
+        <Text>Unknown</Text>
+
+        <Text>Crafting:</Text>
+        <Text>Unknown</Text>
+
+        <Text>Unlock Options:</Text>
+        <Text>Unknown</Text>
       </View>
     );
   }

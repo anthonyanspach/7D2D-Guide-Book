@@ -8,6 +8,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function BaseballCapItem() {
     return (
       <View>
+        <Text>Baseball Cap info</Text>
+
         <Text>Description:</Text>
         <Text>The Baseball Cap is an item of Clothing which can be worn by a character as Apparel, providing a boost to Heat and Cold Resistance. If the player has read the Batter Up Vol.2 book they get a 2.5% damage reduction.</Text>
         <Text>Quality and Durability:</Text>

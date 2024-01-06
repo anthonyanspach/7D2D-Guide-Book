@@ -9,7 +9,13 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function ReinforcedScrapIronStairsItem({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Reinforced Scrap Iron Stairs Info</Text>
+
+        <Text>Description:</Text>
+        <Text>Unknown</Text>
+
+        <Text>Crafting:</Text>
+        <Text>Unknown</Text>
       </View>
     );
   }

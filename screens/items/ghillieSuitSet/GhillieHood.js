@@ -8,7 +8,26 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function GhillieHoodItem() {
     return (
       <View>
-        <Text>Lucky Goggles info</Text>
+        <Text>Ghillie Hood info</Text>
+
+        <Text>Description:</Text>
+        <Text>Ghillie Suit Hood is a piece of clothing that, in addition to heat and cold resist, provides the player with decreased visibility. It is part of the Ghillie Suit with Ghillie Suit Jacket and Ghillie Suit Pants. The decreased visibility is based on vision so it works best when not moving or sneaking slowly. The Ghillie Suit Hood doesn't have any mod slots, a shared property with apparel hats.</Text>
+
+        <Text>Quality and Durability:</Text>
+        <Text>Apparel items do not have a Quality or Durability stat. They do not take damage and never need to be repaired.</Text>
+
+        <Text>Cold and Heat Resistance:</Text>
+        <Text>Apparel items generally have both a Cold Resist and Heat Resist stat. These are determined randomly within a given range for the item type.</Text>
+
+        <Text>Modifier Slots:</Text>
+        <Text>Unknown</Text>
+
+        <Text>Crafting:</Text>
+        <Text>50 Plant Fibers</Text>
+        <Text>1 Sewing Kit</Text>
+
+        <Text>Unlock Options:</Text>
+        <Text>Sniper Complete</Text>
       </View>
     );
   }

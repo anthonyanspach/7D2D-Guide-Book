@@ -9,7 +9,16 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function GreenDrawerItem({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Green Drawer Info</Text>
+
+        <Text>Description:</Text>
+        <Text>Unknown</Text>
+
+        <Text>Crafting:</Text>
+        <Text>None</Text>
+
+        <Text>Unlock Options:</Text>
+        <Text>None / Only Found</Text>
       </View>
     );
   }

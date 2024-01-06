@@ -9,7 +9,13 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function WoodFenceItem({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Wood Fencing Info</Text>
+
+        <Text>Description:</Text>
+        <Text>A Wood Fence is a craftable Building Material. It is easy to craft and inexpensive on resources. Due to its weak strength it is easy to destroy and will not offer very much protection against attacks from Zombies.</Text>
+
+        <Text>Crafting:</Text>
+        <Text>9 Wood</Text>
       </View>
     );
   }

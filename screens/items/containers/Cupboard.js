@@ -9,7 +9,16 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function CupboardItem({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Cupboard Info</Text>
+
+        <Text>Description:</Text>
+        <Text>Cupboards are containers for storage. Cupboards can be found in every house in the city.</Text>
+
+        <Text>Crafting:</Text>
+        <Text>None</Text>
+
+        <Text>Unlock Options:</Text>
+        <Text>None / Only Found</Text>
       </View>
     );
   }

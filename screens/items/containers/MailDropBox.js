@@ -9,7 +9,16 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function MailDropBox({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Mail Drop Box</Text>
+
+        <Text>Description:</Text>
+        <Text>Unknown</Text>
+
+        <Text>Crafting:</Text>
+        <Text>None</Text>
+
+        <Text>Unlock Options:</Text>
+        <Text>None / Only Found</Text>
       </View>
     );
   }
