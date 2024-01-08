@@ -9,7 +9,14 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function ClayRoofBlocksItem({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Clay Roof Blocks info</Text>
+
+        <Text>Description:</Text>
+        <Text>Clay Roof Blocks is a craftable building material. It is crafted in the forge. It has 500 hit points. It is best destroyed with an Auger or Pickaxe. Hitting the block will yield Cobblestone Rocks.</Text>
+
+        <Text>Crafting:</Text>
+        <Text>5 Small Stone</Text>
+        <Text>30 Clay Soil</Text>
       </View>
     );
   }

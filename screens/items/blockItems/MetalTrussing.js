@@ -9,7 +9,14 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function MetalTrussingItem({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Metal Trussing Info</Text>
+
+        <Text>Description:</Text>
+        <Text>Metal Trussing is a craftable building material that has a very high Structural Integrity. It can be shot through(as of A15 test branch, possibly earlier).</Text>
+
+        <Text>Crafting:</Text>
+        <Text>40 Iron</Text>
+        <Text>5 Clay Soil</Text>
       </View>
     );
   }
