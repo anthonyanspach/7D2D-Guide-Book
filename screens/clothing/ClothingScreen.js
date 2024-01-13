@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function ClothingScreen({ navigation }) {
     return (
       <ScrollView>
-        <Text>Clothing Screen</Text>
+        <Text>Clothing Categories</Text>
         <Button title="Hats" onPress={() => navigation.navigate('HatsScreen')} />
         <Button title="Glasses" onPress={() => navigation.navigate('GlassesScreen')} />
         <Button title="Face" onPress={() => navigation.navigate('FaceScreen')} />

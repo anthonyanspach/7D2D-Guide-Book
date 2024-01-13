@@ -9,7 +9,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function FramesScreen({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Frames</Text>
+        
         <Button title="Wood Frame" onPress={() => navigation.navigate('WoodFrameItem')} />
       </View>
     );

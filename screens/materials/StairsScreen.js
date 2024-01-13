@@ -9,7 +9,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function StairsScreen({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Stairs</Text>
+        
         <Button title="Brick Stairs" onPress={() => navigation.navigate('BrickStairsItem')} />
         <Button title="Cobblestone Stairs" onPress={() => navigation.navigate('CobblestoneStairsItem')} />
         <Button title="Concrete Stairs" onPress={() => navigation.navigate('ConcreteStairsItem')} />

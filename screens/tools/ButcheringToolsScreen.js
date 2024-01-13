@@ -8,7 +8,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function ButcheringToolsScreen({ navigation }) {
     return (
       <View>
-        <Text>Construction Tools Screen</Text>
+        <Text>Butchering Tools</Text>
+
+        <Text>Description:</Text>
+        <Text>Butchering Tools are a subset of all the tools used for obtaining additional resources from animal and human remains through butchering.</Text>
+        
         <Button title="Bone Knife" onPress={() => navigation.navigate('BoneKnifeItem')} />
         <Button title="Candy Cane Knife" onPress={() => navigation.navigate('CandyCaneKnifeItem')} />
         <Button title="Hunting Knife" onPress={() => navigation.navigate('HuntingKnifeItem')} />

@@ -9,7 +9,10 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function PumpkinItem({ navigation }) {
     return (
       <View>
-        <Text>Wooden Club Screen</Text>
+        <Text>Pumpkin Info</Text>
+
+        <Text>Description:</Text>
+        <Text>A Pumpkin is a food item that can be harvested from a Pumpkin Plant. It can be used to make Pumpkin Seeds and numerous foods.</Text>
       </View>
     );
   }

@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function LeatherArmorScreen({ navigation }) {
     return (
       <View>
-        <Text>Leather Armor Set Screen</Text>
+        <Text>Leather Armor Set Items</Text>
         <Button title="Leather Boots" onPress={() => navigation.navigate('LeatherBootsItem')} />
         <Button title="Leather Gloves" onPress={() => navigation.navigate('LeatherGlovesItem')} />
         <Button title="Leather Hood" onPress={() => navigation.navigate('LeatherHoodItem')} />

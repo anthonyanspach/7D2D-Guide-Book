@@ -8,7 +8,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function MiningToolsScreen({ navigation }) {
     return (
       <View>
-        <Text>Construction Tools Screen</Text>
+        <Text>Mining Tools</Text>
+
+        <Text>Decription:</Text>
+        <Text>Mining Tools are a subset of all the tools used for obtaining basic resources from all objects through mining.</Text>
+        
         <Button title="Stone Shovel" onPress={() => navigation.navigate('StoneShovelItem')} />
         <Button title="Iron Shovel" onPress={() => navigation.navigate('IronShovelItem')} />
         <Button title="Iron Pickaxe" onPress={() => navigation.navigate('IronPickaxeItem')} />

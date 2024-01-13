@@ -9,7 +9,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function OtherScreen({ navigation }) {
     return (
       <ScrollView>
-        <Text>Campfire Item</Text>
+        <Text>Other Items</Text>
+        
         <Button title="Awning Wedge" onPress={() => navigation.navigate('AwningWedgeItem')} />
         <Button title="Brass Faucet v2" onPress={() => navigation.navigate('BrassFaucetv2Item')} />
         <Button title="Brick Paver Block" onPress={() => navigation.navigate('BrickPaverBlockItem')} />

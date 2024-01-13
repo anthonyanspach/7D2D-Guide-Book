@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function BootsScreen({ navigation }) {
     return (
       <View>
-        <Text>Boots Screen</Text>
+        <Text>Boots Categories</Text>
         <Button title="High Performance Running Shoes" onPress={() => navigation.navigate('HighPerfRunShoesItem')} />
         <Button title="Cowboy Boots" onPress={() => navigation.navigate('CowboyBootsItem')} />
         <Button title="Dress Shoes" onPress={() => navigation.navigate('DressShoesItem')} />

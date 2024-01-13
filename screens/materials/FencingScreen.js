@@ -9,7 +9,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function FencingScreen({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Fencing</Text>
+        
         <Button title="Wood Fence" onPress={() => navigation.navigate('WoodFenceItem')} />
       </View>
     );

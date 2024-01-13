@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function ScrapArmorScreen({ navigation }) {
     return (
       <View>
-        <Text>Scrap Armor Set Screen</Text>
+        <Text>Scrap Armor Set Items</Text>
         <Button title="Scrap Boots" onPress={() => navigation.navigate('ScrapBootsItem')} />
         <Button title="Scrap Chest Armor" onPress={() => navigation.navigate('ScrapChestItem')} />
         <Button title="Scrap Gloves" onPress={() => navigation.navigate('ScrapGlovesItem')} />

@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function LightHelmetsArmorScreen({ navigation }) {
     return (
       <View>
-        <Text>Light Helmets Armor Screen</Text>
+        <Text>Light Helmets Armor Categories</Text>
         
       </View>
     );

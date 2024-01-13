@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function HazmatSuitScreen({ navigation }) {
     return (
       <View>
-        <Text>Hazmat Suit Screen</Text>
+        <Text>Hazmat Suit Set Items</Text>
         <Button title="Hazmat Boots" onPress={() => navigation.navigate('HazmatBootsItem')} />
         <Button title="Hazmat Gloves" onPress={() => navigation.navigate('HazmatGlovesItem')} />
         <Button title="Hazmat Mask" onPress={() => navigation.navigate('HazmatMaskItem')} />

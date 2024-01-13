@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function ResourcesScreen({ navigation }) {
     return (
       <ScrollView>
-        <Text>Resources Screen</Text>
+        <Text>Resources</Text>
         <Text>Coming soon!!!</Text>
       </ScrollView>
     );

@@ -9,7 +9,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function CookedFoodScreen({ navigation }) {
     return (
       <ScrollView>
-        <Text>Cooked Food Screen</Text>
+        <Text>Cooked Foods</Text>
+
         <Text>Early Game</Text>
         <Button title="Boiled Egg" onPress={() => navigation.navigate('BoiledEggItem')} />
         <Button title="Boiled Meat" onPress={() => navigation.navigate('BoiledMeatItem')} />
@@ -17,6 +18,7 @@ function CookedFoodScreen({ navigation }) {
         <Button title="Corn Bread" onPress={() => navigation.navigate('CornBreadItem')} />
         <Button title="Grilled Corn" onPress={() => navigation.navigate('GrilledCornItem')} />
         <Button title="Grilled Meat" onPress={() => navigation.navigate('GrilledMeatItem')} />
+
         <Text>Mid Game</Text>
         <Button title="Blueberry Pie" onPress={() => navigation.navigate('BlueberryPieItem')} />
         <Button title="Meat Stew" onPress={() => navigation.navigate('MeatStewItem')} />
@@ -25,6 +27,7 @@ function CookedFoodScreen({ navigation }) {
         <Button title="Pumpkin Pie" onPress={() => navigation.navigate('PumpkinPieItem')} />
         <Button title="Steak and Potato Meal" onPress={() => navigation.navigate('SteakPotatoMealItem')} />
         <Button title="Vegetable Stew" onPress={() => navigation.navigate('VegetableStewItem')} />
+        
         <Text>Late Game</Text>
         <Button title="Chili Dog" onPress={() => navigation.navigate('ChiliDogItem')} />
         <Button title="Fish Tacos" onPress={() => navigation.navigate('FishTacosItem')} />

@@ -9,7 +9,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function FurnitureScreen({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Furniture</Text>
         <Button title="Air Conditioner" onPress={() => navigation.navigate('AirConditionerItem')} />
         <Button title="Bedroll" onPress={() => navigation.navigate('BedrollItem')} />
         <Button title="Brass Faucet" onPress={() => navigation.navigate('BrassFaucetItem')} />

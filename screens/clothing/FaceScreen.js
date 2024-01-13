@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function FaceScreen({ navigation }) {
     return (
       <View>
-        <Text>Glasses Screen</Text>
+        <Text>Glasses Categories</Text>
         <Button title="Bandana" onPress={() => navigation.navigate('BandanaItem')} />
         <Button title="Cigar" onPress={() => navigation.navigate('CigarItem')} />
         

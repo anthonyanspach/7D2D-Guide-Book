@@ -9,7 +9,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function ItemsScreen({ navigation }) {
     return (
       <View>
-        <Text>Items Screen</Text>
+        <Text>Items Categories</Text>
         <Button title="Clothing" onPress={() => navigation.navigate('ClothingScreen')} />
         <Button title="Tools" onPress={() => navigation.navigate('ToolsScreen')} />
         <Button title="Crafting" onPress={() => navigation.navigate('CraftingScreen')} />

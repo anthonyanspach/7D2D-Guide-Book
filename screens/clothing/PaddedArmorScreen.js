@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function PaddedArmorScreen({ navigation }) {
     return (
       <View>
-        <Text>Padded Armor Set Screen</Text>
+        <Text>Padded Armor Set Items</Text>
         <Button title="Padded Gloves" onPress={() => navigation.navigate('PaddedGlovesItem')} />
         <Button title="Padded Hood" onPress={() => navigation.navigate('PaddedHoodItem')} />
         <Button title="Padded Chest Armor" onPress={() => navigation.navigate('PaddedChestItem')} />

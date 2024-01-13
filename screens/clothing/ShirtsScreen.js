@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function ShirtsScreen({ navigation }) {
     return (
       <View>
-        <Text>Shirts Screen</Text>
+        <Text>Shirts Categories</Text>
         <Button title="BDU Top" onPress={() => navigation.navigate('BDUTopItem')} />
         <Button title="Hazmat Shirt" onPress={() => navigation.navigate('HazmatShirtItem')} />
         <Button title="Hooded Sweatshirt" onPress={() => navigation.navigate('HoodedSweatshirtItem')} />

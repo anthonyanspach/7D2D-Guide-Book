@@ -8,7 +8,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function SpecialToolsScreen({ navigation }) {
     return (
       <View>
-        <Text>Construction Tools Screen</Text>
+        <Text>Special Tools</Text>
+
+        <Text>Description:</Text>
+        <Text>Special Tools perform specific functions and don't fit any aforementioned category.</Text>
+        
         <Button title="Bucket" onPress={() => navigation.navigate('BucketItem')} />
         <Button title="Paint Brush" onPress={() => navigation.navigate('PaintBrushItem')} />
         <Button title="Lockpick" onPress={() => navigation.navigate('LockpickItem')} />

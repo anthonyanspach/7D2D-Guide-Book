@@ -9,6 +9,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function MaterialsScreen({ navigation }) {
     return (
       <View>
+        <Text>Materials Categories</Text>
+
+        <Text>Decription:</Text>
+        <Text>Building Materials includes all of the various materials used in player-constructed structures.</Text>
+        
         <Button title="Workstations" onPress={() => navigation.navigate('WorkstationsScreen')} />
         <Button title="Windows" onPress={() => navigation.navigate('WindowsScreen')} />
         <Button title="Terrain" onPress={() => navigation.navigate('TerrainScreen')} />

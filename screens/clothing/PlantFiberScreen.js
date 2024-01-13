@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function PlantFiberScreen({ navigation }) {
     return (
       <View>
-        <Text>Plant Fiber Set Screen</Text>
+        <Text>Plant Fiber Set Items</Text>
         <Button title="Plant Fiber Boots" onPress={() => navigation.navigate('PlantFiberBootsItem')} />
         <Button title="Plant Fiber Gloves" onPress={() => navigation.navigate('PlantFiberGlovesItem')} />
         <Button title="Plant Fiber Hat" onPress={() => navigation.navigate('PlantFiberHatItem')} />

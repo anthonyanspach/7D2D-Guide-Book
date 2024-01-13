@@ -9,7 +9,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function HatchScreen({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Hatches</Text>
+        
         <Button title="Iron Hatch" onPress={() => navigation.navigate('IronHatchItem')} />
         <Button title="Iron Hatch v2" onPress={() => navigation.navigate('IronHatchv2Item')} />
         <Button title="Iron Hatch v3" onPress={() => navigation.navigate('IronHatchv3Item')} />

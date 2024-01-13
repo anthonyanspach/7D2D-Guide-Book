@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function GhillieSuitScreen({ navigation }) {
     return (
       <View>
-        <Text>Ghillie Suit Screen</Text>
+        <Text>Ghillie Suit Set Items</Text>
         <Button title="Ghillie Suit Hood" onPress={() => navigation.navigate('GhillieHoodItem')} />
         <Button title="Ghillie Suit Jacket" onPress={() => navigation.navigate('GhillieJacketItem')} />
         <Button title="Ghilllie Suit Pants" onPress={() => navigation.navigate('GhilliePantsItem')} />

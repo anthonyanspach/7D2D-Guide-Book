@@ -9,7 +9,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function TerrainScreen({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Terrain</Text>
         <Button title="Asphalt" onPress={() => navigation.navigate('AsphaltItem')} />
       </View>
     );

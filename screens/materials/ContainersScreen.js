@@ -9,7 +9,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function ContainersScreen({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Containers</Text>
+
         <Button title="Cupboard" onPress={() => navigation.navigate('CupboardItem')} />
         <Button title="Green Drawer" onPress={() => navigation.navigate('GreenDrawerItem')} />
         <Button title="Gun Safe" onPress={() => navigation.navigate('GunSafeItem')} />

@@ -9,7 +9,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function BlockItemsScreen({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Block Items</Text>
+        
         <Button title="Awning Red Blocks" onPress={() => navigation.navigate('AwningRedBlocksItem')} />
         <Button title="Brick Blocks" onPress={() => navigation.navigate('BrickBlocksItem')} />
         <Button title="Clay Roof Blocks" onPress={() => navigation.navigate('ClayRoofBlocksItem')} />

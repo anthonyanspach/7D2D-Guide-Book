@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function MilitaryArmorScreen({ navigation }) {
     return (
       <View>
-        <Text>Military Armor Set Screen</Text>
+        <Text>Military Armor Set Items</Text>
         <Button title="Military Boots" onPress={() => navigation.navigate('MilitaryBootsItem')} />
         <Button title="Military Stealth Boots" onPress={() => navigation.navigate('MilitaryStealthBootsItem')} />
         <Button title="Military Gloves" onPress={() => navigation.navigate('MilitaryGlovesItem')} />

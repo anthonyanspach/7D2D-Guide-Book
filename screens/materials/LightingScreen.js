@@ -9,7 +9,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function LightingScreen({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Lighting Items</Text>
+        
         <Button title="Basic Light Bulb" onPress={() => navigation.navigate('BasicLightBulbItem')} />
         <Button title="Burning Barrel" onPress={() => navigation.navigate('BurningBarrelItem')} />
         <Button title="Candle" onPress={() => navigation.navigate('CandleItem')} />

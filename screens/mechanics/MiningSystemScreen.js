@@ -1,5 +1,5 @@
 {/*   */}
-import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -8,9 +8,49 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 function MiningSystemScreen({ navigation }) {
     return (
-      <View>
-        <Text>Survival Screen</Text>
-      </View>
+      <ScrollView>
+        <Text>Mining Mechanics</Text>
+
+        <Text>Overview:</Text>
+        <Text>Mining refers to the activity of Harvesting earth-based and metal-based blocks in order to obtain basic resources such as Clay Soil, Small Stone, Iron, Coal, and so on. As in all types of Harvesting, materials are extracted from blocks as they are damaged and/or destroyed by your efforts.</Text>
+
+
+        <Text>Mining Tools:</Text>
+        <Text>While Mining can be done using Fists, doing so would be tedious and painful. Equipping an Appropriate Tool will greatly speed up the mining process. For softer terrain, such as dirt, sand and gravel, a Shovel or an Auger will work best. For hard blocks including Stone, Iron Ore, Coal Ore, Potassium Nitrate, Lead Ore, and Oil Shale, Stone Axe can be used in the early game with Iron Pickaxe, Steel Pickaxe and Auger being progressively more efficient. These tools can be viewed and compared here.</Text>
+
+
+        <Text>Finding Common Materials:</Text>
+        <Text>Common materials such as Clay Soil, Stone, and Sand can be found almost anywhere. Normal forest terrain will produce Clay Soil, Desert terrain will produce Clay Soil and Sand in equal measure, and Gravel (on gravel roads) will produce a mix of Sand and Small Stone. Surface boulders can be mined directly for Small Stone.</Text>
+
+        <Text>Finding and Extracting Ores:</Text>
+        <Text>Ores are distributed widely underground. There are two ways to find them - surface nodes and random mining. In both cases, mining underground gravel will lead you to more ore. See Following Gravel for more.</Text>
+
+        <Text>Any ore can be found in any biome except for Oil Shale which is found only in the desert and replaces Coal. Surface nodes of all other ore types can be found scattered around everywhere and regardless of the surface node type, underground there will likely be a mix of several ores.</Text>
+
+        <Text>The easiest way to find ore is to look for surface nodes of each ore type and start digging there.</Text>
+
+        <Text>Each node is itself a full ore block, and directly beneath it will be 2-3 additional ore blocks. If you continue to dig deeper and wider, you will likely uncover a vast deposit of whatever ore was at the surface potentially along with other ores mixed in. The image to the right shows a large underground ore field marked by a surface node (lead, in this case, but you can see different types of ores mixed in).</Text>
+
+        <Text>Although surface nodes are a sure-fire way to find big underground deposits, there is ore all over the place underground and you can have great luck just digging where you are and exploring. The image to the right shows a very large ore deposit underground with no surface node attached.</Text>
+
+        <Text>Ore blocks are always bordered by either another ore block or a gravel block, you will almost never find an ore block completely surrounded by stone. By "following the gravel" you will increase your chances of finding more ore blocks. The image on the right shows some Coal and Lead ore blocks surrounded by gravel.</Text>
+
+
+        <Text>Mining Related Perks:</Text>
+        <Text>Miner 69er will allow the crafting of better tools, increases their block damage and reduces stamina use.</Text>
+
+        <Text>Mother Lode will allow the harvesting of more resources from each node (including Wood from trees).</Text>
+
+        <Text>Advanced Engineering will allow forging iron and steel to create better tools.</Text>
+
+
+        <Text>Mining Related Books:</Text>
+        <Text>There is a series of Perk Books which give special bonuses for mining: The Art of Mining. These books give chances to find silver/gold/gems, allow compacting ores into easier-to-carry stacks and, if all of them are read, the player has a chance to one-shot any ore block.</Text>
+
+
+        <Text>Digging and Structural Intgrity:</Text>
+        <Text>Structural Integrity should be kept in mind while mining underground. Tunnels beneath the surface can compromise the integrity of buildings on the surface and carving out large caves can result in a collapse (and damage to you!). It is a good idea to keep a stack of Wood Frames to use as support pillars. The Art of Mining book series has a book which reduces damage taken from cave-ins.</Text>
+      </ScrollView>
     );
   }
 

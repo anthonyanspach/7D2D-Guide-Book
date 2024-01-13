@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function IronArmorScreen({ navigation }) {
     return (
       <View>
-        <Text>Iron Armor Set Screen</Text>
+        <Text>Iron Armor Set Items</Text>
         <Button title="Iron Boots" onPress={() => navigation.navigate('IronBootsItem')} />
         <Button title="Iron Chest Armor" onPress={() => navigation.navigate('IronChestItem')} />
         <Button title="Iron Gloves" onPress={() => navigation.navigate('IronGlovesItem')} />

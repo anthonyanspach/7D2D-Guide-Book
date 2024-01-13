@@ -1,5 +1,5 @@
 {/*   */}
-import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -8,8 +8,12 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 function CannedFoodsScreen({ navigation }) {
     return (
-      <View>
-        <Text>Canned Foods Screen</Text>
+      <ScrollView>
+        <Text>Canned Foods</Text>
+
+        <Text>Description:</Text>
+        <Text>Even though most types of canned food can be used in a recipe later on, consuming them is a rather essential part of early game. Some canned food isn't used in recipes: these include Can of Cat Food, Can of Miso, Can of Pears, Chicken Soup and Chicken Ration.</Text>
+
         <Button title="Can of Cat Food" onPress={() => navigation.navigate('CanCatFoodItem')} />
         <Button title="Can of Chili" onPress={() => navigation.navigate('CanChiliItem')} />
         <Button title="Can of Dog Food" onPress={() => navigation.navigate('CanDogFoodItem')} />
@@ -25,7 +29,7 @@ function CannedFoodsScreen({ navigation }) {
         <Button title="Chicken Soup" onPress={() => navigation.navigate('ChickenSoupItem')} />
         <Button title="Lamb Ration" onPress={() => navigation.navigate('LambRationItem')} />
         <Button title="Large Beef Ration" onPress={() => navigation.navigate('LargeBeefRationItem')} />
-      </View>
+      </ScrollView>
     );
   }
 

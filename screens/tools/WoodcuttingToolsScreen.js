@@ -8,7 +8,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function WoodcuttingToolsScreen({ navigation }) {
     return (
       <View>
-        <Text>Construction Tools Screen</Text>
+        <Text>Woodcutting Tools</Text>
+
+        <Text>Description:</Text>
+        <Text>Woodcutting tools are a subset of all the tools used for... cutting wood. Use this tool against a tree looking object and it will have not chance against you. In addition, you will obtain wood for activities.</Text>
+        
         <Button title="Stone Axe" onPress={() => navigation.navigate('StoneAxeItem')} />
         <Button title="Taza's Stone Axe" onPress={() => navigation.navigate('TazaStoneAxeItem')} />
         <Button title="Iron Fireaxe" onPress={() => navigation.navigate('IronFireaxeItem')} />

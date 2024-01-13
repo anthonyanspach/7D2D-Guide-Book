@@ -8,7 +8,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function OvercoatsScreen({ navigation }) {
     return (
       <View>
-        <Text>Overcoats Screen</Text>
+        <Text>Overcoats Categories</Text>
         <Button title="Leather Poncho" onPress={() => navigation.navigate('LeatherPonchoItem')} />
         <Button title="College Jacket" onPress={() => navigation.navigate('CollegeJacketItem')} />
         <Button title="Jacket" onPress={() => navigation.navigate('JacketItem')} />

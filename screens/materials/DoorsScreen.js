@@ -9,7 +9,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function DoorsScreen({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Doors</Text>
+        
         <Button title="Garage Door Metal" onPress={() => navigation.navigate('GarageDoorMetalItem')} />
         <Button title="Garage Door Metal v2" onPress={() => navigation.navigate('GarageDoorMetalv2Item')} />
         <Button title="Garage Door Metal v3" onPress={() => navigation.navigate('GarageDoorMetalv3Item')} />

@@ -9,7 +9,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function WindowsScreen({ navigation }) {
     return (
       <View>
-        <Text>Campfire Item</Text>
+        <Text>Window</Text>
         <Button title="Wood Window" onPress={() => navigation.navigate('WoodWindowItem')} />
       </View>
     );

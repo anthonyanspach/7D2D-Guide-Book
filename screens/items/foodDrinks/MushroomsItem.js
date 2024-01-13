@@ -9,7 +9,10 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 function MushroomsItem({ navigation }) {
     return (
       <View>
-        <Text>Wooden Club Screen</Text>
+        <Text>Mushroom Info</Text>
+
+        <Text>Description:</Text>
+        <Text>Mushrooms can be harvested from Mushroom Clumps found in Caves and on the walls of Caves. Eating Mushrooms will increase the Fullness of the player. They can be crafted into Mushroom Spore Seeds. To see growing methods see Mushroom Spore Seed.</Text>
       </View>
     );
   }
