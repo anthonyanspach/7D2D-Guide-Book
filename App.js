@@ -2,7 +2,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, DarkTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 {/*screen imports*/}
@@ -424,13 +424,24 @@ import GrandpaLearnElixirItem from './screens/items/foodDrinks/GrandpaLearnElixi
 import GrandpaMoonshineItem from './screens/items/foodDrinks/GrandpaMoonshineItem';
 
 
+const MyTheme = {
+  dark: true,
+  colors: {
+    primary: 'red',
+    background: 'rgb(20, 20, 20)',
+    card: 'black',
+    text: 'red',
+    border: 'red',
+    notification: 'rgb(255, 69, 58)',
+  },
+};
 
 export default function App() {
 
   const Stack = createNativeStackNavigator();
 
   return (
-    <NavigationContainer>
+    <NavigationContainer theme={MyTheme}>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="StartingGuide" component={StartingGuide} />
@@ -1079,8 +1090,24 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'black',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text: {
+    color: 'red',
+    marginBottom: 5,
+  },
+  screenHeader: {
+    color: 'red',
+    fontSize: 35,
+    textAlign: 'center',
+    marginBottom: 20,
+  },
+  sectionHeader: {
+    color: 'red',
+    fontSize: 25,
+    textAlign: 'center',
+    marginBottom: 10,
+  }
 });

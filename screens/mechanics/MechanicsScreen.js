@@ -8,25 +8,134 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 function MechanicsScreen({ navigation }) {
     return (
-      <ScrollView>
-        <Text>Mechanics</Text>
-        <Text>There are a lot of different game mechanics which are briefly summarized here. This is not intended as a tutorial or guide, but an overview of information about game mechanics with links to pages on each subject.</Text>
-        <Button title=" Survival" onPress={() => navigation.navigate('SurvivalScreen')} />
-        <Button title=" Combat and Damage" onPress={() => navigation.navigate('CombatDamageScreen')} />
-        <Button title=" Leveling System" onPress={() => navigation.navigate('LevelingSystemScreen')} />
-        <Button title=" Crafting System" onPress={() => navigation.navigate('CraftingSystemScreen')} />
-        <Button title=" Repairing Items" onPress={() => navigation.navigate('RepairingItemScreen')} />
-        <Button title=" Item System" onPress={() => navigation.navigate('ItemSystemScreen')} />
-        <Button title=" Menu Interface" onPress={() => navigation.navigate('MenuInterfaceScreen')} />
-        <Button title=" Resources System" onPress={() => navigation.navigate('ResourcesSystemScreen')} />
-        <Button title=" Constructing Buildings" onPress={() => navigation.navigate('ConstructingBuildingsScreen')} />
-        <Button title=" Ambience System" onPress={() => navigation.navigate('AmbienceSystemScreen')} />
-        <Button title="Zombies" onPress={() => navigation.navigate('ZombiesScreen')} />
-        <Button title="Electricity" onPress={() => navigation.navigate('ElectricityScreen')} />
-        <Button title="Health System" onPress={() => navigation.navigate('HealthSystemScreen')} />
-        <Button title="Mining System" onPress={() => navigation.navigate('MiningSystemScreen')} />
+      <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
+
+        <Text style={[styles.screenHeader]}>Mechanics</Text>
+        <Text style={[styles.text]}>There are a lot of different game mechanics which are briefly summarized here. This is not intended as a tutorial or guide, but an overview of information about game mechanics</Text>
+
+        <View style={[styles.container]}>
+
+          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('SurvivalScreen')} >
+
+            <Text style={[styles.buttonText]}>Survival</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('CombatDamageScreen')} >
+
+          <Text style={[styles.buttonText]}>Combat & Damage</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('LevelingSystemScreen')} >
+
+            <Text style={[styles.buttonText]}>Leveling</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('CraftingSystemScreen')} >
+
+            <Text style={[styles.buttonText]}>Crafting</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('RepairingItemScreen')} >
+
+            <Text style={[styles.buttonText]}>Repairing Items</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ItemSystemScreen')} >
+
+            <Text style={[styles.buttonText]}>Item</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('MenuInterfaceScreen')} >
+
+            <Text style={[styles.buttonText]}>Menu Interface</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ResourcesSystemScreen')} >
+
+            <Text style={[styles.buttonText]}>Resources</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ConstructingBuildingsScreen')} >
+
+            <Text style={[styles.buttonText]}>Contructing Buildings</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('AmbienceSystemScreen')} >
+
+            <Text style={[styles.buttonText]}>Ambience</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ZombiesScreen')} >
+
+            <Text style={[styles.buttonText]}>Zombies</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ElectricityScreen')} >
+
+            <Text style={[styles.buttonText]}>Electricity</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('HealthSystemScreen')} >
+
+            <Text style={[styles.buttonText]}>Heath</Text>
+
+          </TouchableOpacity>
+          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('MiningSystemScreen')} >
+
+            <Text style={[styles.buttonText]}>Mining</Text>
+
+          </TouchableOpacity>
+
+        </View>
       </ScrollView>
     );
   }
 
 export default MechanicsScreen;
+
+const styles = StyleSheet.create({
+  contentContainerStyle: {
+    height: '100%',
+  },
+  container: {
+    backgroundColor: 'rgb(20, 20, 20)',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  scrollContainer: {
+    flex: 1,
+    paddingVertical: 10,
+  },
+  text: {
+    color: 'red',
+    marginBottom: 5,
+    marginHorizontal: 5,
+  },
+  screenHeader: {
+    color: 'red',
+    fontSize: 35,
+    textAlign: 'center',
+    marginBottom: 20,
+  },
+  sectionHeader: {
+    color: 'red',
+    fontSize: 25,
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+  button: {
+    backgroundColor: 'black',
+    borderColor: 'red',
+    borderWidth: 2,
+    borderRadius: 5,
+    marginHorizontal: 5,
+    marginTop: 5,
+    alignItems: 'center',
+    height: '10%',
+    width: '80%',
+  },
+  buttonText: {
+    color: 'red',
+    fontSize: 25,
+  },
+});
