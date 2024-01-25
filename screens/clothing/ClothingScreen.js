@@ -7,103 +7,99 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 function ClothingScreen({ navigation }) {
     return (
-      <ScrollView>
+      <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
         <Text style={[styles.screenHeader]}>Clothing Categories</Text>
 
-        <View style={[styles.container]}>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('HatsScreen')} >
 
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('HatsScreen')} >
+          <Text style={[styles.buttonText]}>Hats</Text>
 
-            <Text style={[styles.buttonText]}>Hats</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('GlassesScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('GlassesScreen')} >
+          <Text style={[styles.buttonText]}>Glasses</Text>
 
-            <Text style={[styles.buttonText]}>Glasses</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('FaceScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('FaceScreen')} >
+          <Text style={[styles.buttonText]}>Face</Text>
 
-            <Text style={[styles.buttonText]}>Face</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('OvercoatsScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('OvercoatsScreen')} >
+          <Text style={[styles.buttonText]}>Overcoats</Text>
 
-            <Text style={[styles.buttonText]}>Overcoats</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ShirtsScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ShirtsScreen')} >
+          <Text style={[styles.buttonText]}>Shirts</Text>
 
-            <Text style={[styles.buttonText]}>Shirts</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('PantsScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('PantsScreen')} >
+          <Text style={[styles.buttonText]}>Pants</Text>
 
-            <Text style={[styles.buttonText]}>Pants</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('BootsScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('BootsScreen')} >
+          <Text style={[styles.buttonText]}>Boots</Text>
 
-            <Text style={[styles.buttonText]}>Boots</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('LightHelmetsArmorScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('LightHelmetsArmorScreen')} >
+          <Text style={[styles.buttonText]}>Light Armor Helmets</Text>
 
-            <Text style={[styles.buttonText]}>Light Armor Helmets</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('HeavyHelmetsArmorScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('HeavyHelmetsArmorScreen')} >
+          <Text style={[styles.buttonText]}>Heavy Armor Helmets</Text>
 
-            <Text style={[styles.buttonText]}>Heavy Armor Helmets</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('PlantFiberScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('PlantFiberScreen')} >
+          <Text style={[styles.buttonText]}>Plant Fiber Armor Set</Text>
 
-            <Text style={[styles.buttonText]}>Plant Fiber Armor Set</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('PaddedArmorScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('PaddedArmorScreen')} >
+          <Text style={[styles.buttonText]}>Padded Armor Set</Text>
 
-            <Text style={[styles.buttonText]}>Padded Armor Set</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('LeatherArmorScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('LeatherArmorScreen')} >
+          <Text style={[styles.buttonText]}>Leather Armor Set</Text>
 
-            <Text style={[styles.buttonText]}>Leather Armor Set</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('MilitaryArmorScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('MilitaryArmorScreen')} >
+          <Text style={[styles.buttonText]}>Military Armor Set</Text>
 
-           <Text style={[styles.buttonText]}>Military Armor Set</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ScrapArmorScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ScrapArmorScreen')} >
+          <Text style={[styles.buttonText]}>Scrap Armor Set</Text>
 
-            <Text style={[styles.buttonText]}>Scrap Armor Set</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('IronArmorScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('IronArmorScreen')} >
+          <Text style={[styles.buttonText]}>Iron Armor Set</Text>
 
-            <Text style={[styles.buttonText]}>Iron Armor Set</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('SteelArmorScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('SteelArmorScreen')} >
+          <Text style={[styles.buttonText]}>Steel Armor Set</Text>
 
-            <Text style={[styles.buttonText]}>Steel Armor Set</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('HazmatSuitScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('HazmatSuitScreen')} >
+          <Text style={[styles.buttonText]}>Hazmat Suit Set</Text>
 
-            <Text style={[styles.buttonText]}>Hazmat Suit Set</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('GhillieSuitScreen')} >
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('GhillieSuitScreen')} >
+          <Text style={[styles.buttonText]}>Ghillie Suit Set</Text>
 
-            <Text style={[styles.buttonText]}>Ghillie Suit Set</Text>
-
-          </TouchableOpacity>
-
-        </View>
+        </TouchableOpacity>
 
       </ScrollView>
     );
@@ -112,16 +108,29 @@ function ClothingScreen({ navigation }) {
 export default ClothingScreen;
 
 const styles = StyleSheet.create({
+  contentContainerStyle: {
+    alignItems: 'center',
+    paddingBottom: 200,
+  },
   container: {
-    flex: 1,
     backgroundColor: 'rgb(20, 20, 20)',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
+  },
+  scrollContainer: {
+    flex: 1,
+    paddingVertical: 10,
+    
   },
   text: {
     color: 'red',
     marginBottom: 5,
     marginHorizontal: 5,
+  },
+  list: {
+    color: 'green',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
   screenHeader: {
     color: 'red',
@@ -140,11 +149,11 @@ const styles = StyleSheet.create({
     borderColor: 'red',
     borderWidth: 2,
     borderRadius: 5,
-    margin: 5,
+    marginHorizontal: 5,
+    marginTop: 5,
     alignItems: 'center',
-    height: 40,
-    width: 350,
-    justifyContent: 'center',
+    height: '5%',
+    width: '80%',
   },
   buttonText: {
     color: 'red',

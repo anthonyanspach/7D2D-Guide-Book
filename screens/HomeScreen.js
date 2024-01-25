@@ -27,21 +27,21 @@ function HomeScreen({ navigation }) {
 
         <View style={[styles.container]}>
 
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('StartingGuide')} >
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('StartingGuide')} >
 
-            <Text style={[styles.buttonText]}>Starting Guide</Text>
+          <Text style={[styles.buttonText]}>Starting Guide</Text>
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ItemsScreen')} >
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ItemsScreen')} >
 
-            <Text style={[styles.buttonText]}>Items</Text>
+          <Text style={[styles.buttonText]}>Items</Text>
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('MechanicsScreen')} >
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('MechanicsScreen')} >
 
-            <Text style={[styles.buttonText]}>Mechanics</Text>
+          <Text style={[styles.buttonText]}>Mechanics</Text>
 
-          </TouchableOpacity>
+        </TouchableOpacity>
 
         </View>
       </ScrollView>

@@ -13,80 +13,80 @@ function MechanicsScreen({ navigation }) {
         <Text style={[styles.screenHeader]}>Mechanics</Text>
         <Text style={[styles.text]}>There are a lot of different game mechanics which are briefly summarized here. This is not intended as a tutorial or guide, but an overview of information about game mechanics</Text>
 
-        <View style={[styles.container]}>
+        
 
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('SurvivalScreen')} >
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('SurvivalScreen')} >
 
-            <Text style={[styles.buttonText]}>Survival</Text>
+          <Text style={[styles.buttonText]}>Survival</Text>
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('CombatDamageScreen')} >
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('CombatDamageScreen')} >
 
-          <Text style={[styles.buttonText]}>Combat & Damage</Text>
+        <Text style={[styles.buttonText]}>Combat & Damage</Text>
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('LevelingSystemScreen')} >
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('LevelingSystemScreen')} >
 
-            <Text style={[styles.buttonText]}>Leveling</Text>
+          <Text style={[styles.buttonText]}>Leveling</Text>
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('CraftingSystemScreen')} >
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('CraftingSystemScreen')} >
 
-            <Text style={[styles.buttonText]}>Crafting</Text>
+          <Text style={[styles.buttonText]}>Crafting</Text>
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('RepairingItemScreen')} >
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('RepairingItemScreen')} >
 
-            <Text style={[styles.buttonText]}>Repairing Items</Text>
+          <Text style={[styles.buttonText]}>Repairing Items</Text>
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ItemSystemScreen')} >
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ItemSystemScreen')} >
 
-            <Text style={[styles.buttonText]}>Item</Text>
+          <Text style={[styles.buttonText]}>Item</Text>
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('MenuInterfaceScreen')} >
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('MenuInterfaceScreen')} >
 
-            <Text style={[styles.buttonText]}>Menu Interface</Text>
+          <Text style={[styles.buttonText]}>Menu Interface</Text>
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ResourcesSystemScreen')} >
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ResourcesSystemScreen')} >
 
-            <Text style={[styles.buttonText]}>Resources</Text>
+          <Text style={[styles.buttonText]}>Resources</Text>
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ConstructingBuildingsScreen')} >
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ConstructingBuildingsScreen')} >
 
-            <Text style={[styles.buttonText]}>Contructing Buildings</Text>
+          <Text style={[styles.buttonText]}>Contructing Buildings</Text>
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('AmbienceSystemScreen')} >
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('AmbienceSystemScreen')} >
 
-            <Text style={[styles.buttonText]}>Ambience</Text>
+          <Text style={[styles.buttonText]}>Ambience</Text>
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ZombiesScreen')} >
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ZombiesScreen')} >
 
-            <Text style={[styles.buttonText]}>Zombies</Text>
+          <Text style={[styles.buttonText]}>Zombies</Text>
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ElectricityScreen')} >
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ElectricityScreen')} >
 
-            <Text style={[styles.buttonText]}>Electricity</Text>
+          <Text style={[styles.buttonText]}>Electricity</Text>
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('HealthSystemScreen')} >
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('HealthSystemScreen')} >
 
-            <Text style={[styles.buttonText]}>Heath</Text>
+          <Text style={[styles.buttonText]}>Heath</Text>
 
-          </TouchableOpacity>
-          <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('MiningSystemScreen')} >
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('MiningSystemScreen')} >
 
-            <Text style={[styles.buttonText]}>Mining</Text>
+          <Text style={[styles.buttonText]}>Mining</Text>
 
-          </TouchableOpacity>
+        </TouchableOpacity>
 
-        </View>
+        
       </ScrollView>
     );
   }
@@ -95,7 +95,8 @@ export default MechanicsScreen;
 
 const styles = StyleSheet.create({
   contentContainerStyle: {
-    height: '100%',
+    alignItems: 'center',
+    paddingBottom: 300,
   },
   container: {
     backgroundColor: 'rgb(20, 20, 20)',
@@ -105,6 +106,7 @@ const styles = StyleSheet.create({
   scrollContainer: {
     flex: 1,
     paddingVertical: 10,
+    
   },
   text: {
     color: 'red',
@@ -131,7 +133,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
     marginTop: 5,
     alignItems: 'center',
-    height: '10%',
+    height: '7%',
     width: '80%',
   },
   buttonText: {

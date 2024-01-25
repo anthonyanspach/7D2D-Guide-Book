@@ -12,8 +12,6 @@ function ItemsScreen({ navigation }) {
           
           <Text style={[styles.screenHeader]}>Items Categories</Text>
 
-          <View style={[styles.container]}>
-
           <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ClothingScreen')} >
 
             <Text style={[styles.buttonText]}>Clothing</Text>
@@ -54,8 +52,6 @@ function ItemsScreen({ navigation }) {
             <Text style={[styles.buttonText]}>Food & Drink</Text>
 
           </TouchableOpacity>
-            
-          </View>
         </ScrollView>
     );
   }
@@ -64,7 +60,8 @@ export default ItemsScreen;
 
 const styles = StyleSheet.create({
   contentContainerStyle: {
-    height: '100%',
+    alignItems: 'center',
+    paddingBottom: 200,
   },
   container: {
     backgroundColor: 'rgb(20, 20, 20)',
@@ -74,6 +71,7 @@ const styles = StyleSheet.create({
   scrollContainer: {
     flex: 1,
     paddingVertical: 10,
+    
   },
   text: {
     color: 'red',

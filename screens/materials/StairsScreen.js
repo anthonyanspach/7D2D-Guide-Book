@@ -1,5 +1,5 @@
 {/*   */}
-import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -8,18 +8,100 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 function StairsScreen({ navigation }) {
     return (
-      <View>
-        <Text>Stairs</Text>
+      <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
+        <Text style={[styles.screenHeader]}>Stairs</Text>
         
-        <Button title="Brick Stairs" onPress={() => navigation.navigate('BrickStairsItem')} />
-        <Button title="Cobblestone Stairs" onPress={() => navigation.navigate('CobblestoneStairsItem')} />
-        <Button title="Concrete Stairs" onPress={() => navigation.navigate('ConcreteStairsItem')} />
-        <Button title="Flagstone Stairs" onPress={() => navigation.navigate('FlagstoneStairsItem')} />
-        <Button title="Reinforced Scrap Iron Stairs" onPress={() => navigation.navigate('ReinforcedScrapIronStairsItem')} />
-        <Button title="Steel Stairs" onPress={() => navigation.navigate('SteelStairsItem')} />
-        <Button title="Wooden Stairs" onPress={() => navigation.navigate('WoodenStairsItem')} />
-      </View>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('BrickStairsItem')} >
+
+          <Text style={[styles.buttonText]}>Brick Stairs</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('CobblestoneStairsItem')} >
+
+          <Text style={[styles.buttonText]}>Cobblestone Stairs</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ConcreteStairsItem')} >
+
+          <Text style={[styles.buttonText]}>Concrete Stairs</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('FlagstoneStairsItem')} >
+
+          <Text style={[styles.buttonText]}>Flagstone Stairs</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ReinforcedScrapIronStairsItem')} >
+
+          <Text style={[styles.buttonText]}>Reinforced Scrap Iron Stairs</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('SteelStairsItem')} >
+
+          <Text style={[styles.buttonText]}>Steel Stairs</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('WoodenStairsItem')} >
+
+          <Text style={[styles.buttonText]}>Wooden Stairs</Text>
+
+        </TouchableOpacity>
+      </ScrollView>
     );
   }
 
 export default StairsScreen;
+
+const styles = StyleSheet.create({
+  contentContainerStyle: {
+    alignItems: 'center',
+    paddingBottom: 200,
+  },
+  container: {
+    backgroundColor: 'rgb(20, 20, 20)',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  scrollContainer: {
+    flex: 1,
+    paddingVertical: 10,
+    
+  },
+  text: {
+    color: 'red',
+    marginBottom: 5,
+    marginHorizontal: 5,
+  },
+  list: {
+    color: 'green',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  screenHeader: {
+    color: 'red',
+    fontSize: 35,
+    textAlign: 'center',
+    marginBottom: 20,
+  },
+  sectionHeader: {
+    color: 'red',
+    fontSize: 25,
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+  button: {
+    backgroundColor: 'black',
+    borderColor: 'red',
+    borderWidth: 2,
+    borderRadius: 5,
+    marginHorizontal: 5,
+    marginTop: 5,
+    alignItems: 'center',
+    height: '10%',
+    width: '80%',
+  },
+  buttonText: {
+    color: 'red',
+    fontSize: 25,
+  },
+});
