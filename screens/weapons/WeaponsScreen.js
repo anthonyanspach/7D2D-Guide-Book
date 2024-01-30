@@ -159,7 +159,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 5,
     marginTop: 5,
     alignItems: 'center',
-    height: '3%',
+    height: '2%',
     width: '80%',
   },
   buttonText: {

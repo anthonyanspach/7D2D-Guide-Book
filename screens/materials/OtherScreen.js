@@ -8,35 +8,185 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 function OtherScreen({ navigation }) {
     return (
-      <ScrollView>
-        <Text>Other Items</Text>
+      <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
+        <Text style={[styles.screenHeader]}>Other Items</Text>
         
-        <Button title="Awning Wedge" onPress={() => navigation.navigate('AwningWedgeItem')} />
-        <Button title="Brass Faucet v2" onPress={() => navigation.navigate('BrassFaucetv2Item')} />
-        <Button title="Brick Paver Block" onPress={() => navigation.navigate('BrickPaverBlockItem')} />
-        <Button title="Bulletproof Glass" onPress={() => navigation.navigate('BulletproofGlassItem')} />
-        <Button title="Cement" onPress={() => navigation.navigate('CementItem')} />
-        <Button title="Cobblestone Wedge" onPress={() => navigation.navigate('CobblestoneWedgeItem')} />
-        <Button title="Farm Plot" onPress={() => navigation.navigate('FarmPlotItem')} />
-        <Button title="Fluorescent Light" onPress={() => navigation.navigate('FluorescentLightItem')} />
-        <Button title="Industrial Light" onPress={() => navigation.navigate('IndustrialLightItem')} />
-        <Button title="Industrial Light Bulb" onPress={() => navigation.navigate('IndustrialLightBlubItem')} />
-        <Button title="Iron Bars" onPress={() => navigation.navigate('IronBarsItem')} />
-        <Button title="Iron Ladder" onPress={() => navigation.navigate('IronLadderItem')} />
-        <Button title="Metal Catwalk" onPress={() => navigation.navigate('MetalCatwalkItem')} />
-        <Button title="Metal Reinforced Wood Ramp" onPress={() => navigation.navigate('MetalReinforcedWoodRampItem')} />
-        <Button title="Reinforced Wood Ramp" onPress={() => navigation.navigate('ReinforcedWoodRampItem')} />
-        <Button title="Scrap Iron Ramp" onPress={() => navigation.navigate('ScrapIronRampItem')} />
-        <Button title="Shower Glass Block" onPress={() => navigation.navigate('ShowerGlassBlockItem')} />
-        <Button title="Solid Rebar Ramp Frame" onPress={() => navigation.navigate('SolidRebarRampFrameItem')} />
-        <Button title="Steel Ladder" onPress={() => navigation.navigate('SteelLadderItem')} />
-        <Button title="Venetian Blinds" onPress={() => navigation.navigate('VenetianBlindsItem')} />
-        <Button title="Wood Catwalk" onPress={() => navigation.navigate('WoodCatwalkItem')} />
-        <Button title="Wood Ramp" onPress={() => navigation.navigate('WoodRampItem')} />
-        <Button title="Wood Ramp Frame" onPress={() => navigation.navigate('WoodRampFrameItem')} />
-        <Button title="Wooden Ladder" onPress={() => navigation.navigate('WoodenLadderItem')} />
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('AwningWedgeItem')} >
+
+          <Text style={[styles.buttonText]}>Awning Wedge</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('BrassFaucetv2Item')} >
+
+          <Text style={[styles.buttonText]}>Brass Faucet v2</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('BrickPaverBlockItem')} >
+
+          <Text style={[styles.buttonText]}>Brick Paver Block</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('BulletproofGlassItem')} >
+
+          <Text style={[styles.buttonText]}>Bulletproof Glass</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('CementItem')} >
+
+          <Text style={[styles.buttonText]}>Cement</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('CobblestoneWedgeItem')} >
+
+          <Text style={[styles.buttonText]}>Cobblestone Wedge</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('FarmPlotItem')} >
+
+          <Text style={[styles.buttonText]}>Farm Plot</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('FluorescentLightItem')} >
+
+          <Text style={[styles.buttonText]}>Fluorescent Light</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('IndustrialLightItem')} >
+
+          <Text style={[styles.buttonText]}>Industrial Light</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('IndustrialLightBlubItem')} >
+
+          <Text style={[styles.buttonText]}>Industrial Light Bulb</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('IronBarsItem')} >
+
+          <Text style={[styles.buttonText]}>Iron Bars</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('IronLadderItem')} >
+
+          <Text style={[styles.buttonText]}>Iron Ladder</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('MetalCatwalkItem')} >
+
+          <Text style={[styles.buttonText]}>Metal Catwalk</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('MetalReinforcedWoodRampItem')} >
+
+          <Text style={[styles.buttonText]}>Metal Reinforced Wood Ramp</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ReinforcedWoodRampItem')} >
+
+          <Text style={[styles.buttonText]}>Reinforced Wood Ramp</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ScrapIronRampItem')} >
+
+          <Text style={[styles.buttonText]}>Scrap Iron Ramp</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ShowerGlassBlockItem')} >
+
+          <Text style={[styles.buttonText]}>Shower Glass Block</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('SolidRebarRampFrameItem')} >
+
+          <Text style={[styles.buttonText]}>Solid Rebar Ramp Frame</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('SteelLadderItem')} >
+
+          <Text style={[styles.buttonText]}>Steel Ladder</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('VenetianBlindsItem')} >
+
+          <Text style={[styles.buttonText]}>Venetian Blinds</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('WoodCatwalkItem')} >
+
+          <Text style={[styles.buttonText]}>Wood Catwalk</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('WoodRampItem')} >
+
+          <Text style={[styles.buttonText]}>Wood Ramp</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('WoodRampFrameItem')} >
+
+          <Text style={[styles.buttonText]}>Wood Ramp Frame</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('WoodenLadderItem')} >
+
+          <Text style={[styles.buttonText]}>Wooden Ladder</Text>
+
+        </TouchableOpacity>
       </ScrollView>
     );
   }
 
 export default OtherScreen;
+
+const styles = StyleSheet.create({
+  contentContainerStyle: {
+    alignItems: 'center',
+    paddingBottom: 200,
+  },
+  container: {
+    backgroundColor: 'rgb(20, 20, 20)',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  scrollContainer: {
+    flex: 1,
+    paddingVertical: 10,
+    
+  },
+  text: {
+    color: 'red',
+    marginBottom: 5,
+    marginHorizontal: 5,
+  },
+  list: {
+    color: 'green',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  screenHeader: {
+    color: 'red',
+    fontSize: 35,
+    textAlign: 'center',
+    marginBottom: 20,
+  },
+  sectionHeader: {
+    color: 'red',
+    fontSize: 25,
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+  button: {
+    backgroundColor: 'black',
+    borderColor: 'red',
+    borderWidth: 2,
+    borderRadius: 5,
+    marginHorizontal: 5,
+    marginTop: 5,
+    alignItems: 'center',
+    height: '4%',
+    width: '80%',
+  },
+  buttonText: {
+    color: 'red',
+    fontSize: 20,
+  },
+});

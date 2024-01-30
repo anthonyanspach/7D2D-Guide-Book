@@ -8,28 +8,139 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 function ExplosivesScreen({ navigation }) {
     return (
-      <ScrollView>
-        <Text>Explosives</Text>
+      <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
+        <Text style={[styles.screenHeader]}>Explosives</Text>
 
-        <Text>Description:</Text>
-        <Text>Explosives are covered under the perk Demolitions Expert. They offer a way to take out many enemies at the same time with grenades and other explosive throwables. They are, however, consumed in the process, forcing the player to craft more of them much like ammunition. Even though mines are unlocked by the Demolitions Expert perk, they don't benefit from it any other way.</Text>
+        <Text style={[styles.text]}>Description:</Text>
+        <Text style={[styles.text]}>Explosives are covered under the perk Demolitions Expert. They offer a way to take out many enemies at the same time with grenades and other explosive throwables. They are, however, consumed in the process, forcing the player to craft more of them much like ammunition. Even though mines are unlocked by the Demolitions Expert perk, they don't benefit from it any other way.</Text>
 
-        <Button title="Rocket Launcher" onPress={() => navigation.navigate('RocketLauncherItem')} />
-        <Button title="Exploding Arrow" onPress={() => navigation.navigate('ExplodingArrowItem')} />
-        <Button title="Exploding Crossbow Bolt" onPress={() => navigation.navigate('ExplodingCrossbowBoltItem')} />
-        <Button title="Rusty Barrel" onPress={() => navigation.navigate('RustyBarrelItem')} />
-        <Button title="Tin Land Mine" onPress={() => navigation.navigate('TinLandMineItem')} />
-        <Button title="Cooking Pot Mine" onPress={() => navigation.navigate('CookingPotMineItem')} />
-        <Button title="Hub Cap Mine" onPress={() => navigation.navigate('HubCapMineItem')} />
-        <Button title="Air Filter Land Mine" onPress={() => navigation.navigate('AirFilterLandMineItem')} />
-        <Button title="Timed Charge" onPress={() => navigation.navigate('TimedChargeItem')} />
-        <Button title="Molotov Cocktail" onPress={() => navigation.navigate('MolotovCocktailItem')} />
-        <Button title="Pipe Bomb" onPress={() => navigation.navigate('PipeBombItem')} />
-        <Button title="Contact Grenade" onPress={() => navigation.navigate('ContactGrenadeItem')} />
-        <Button title="Grenade" onPress={() => navigation.navigate('GrenadeItem')} />
-        <Button title="Stick of Dynamite" onPress={() => navigation.navigate('StickofDynamiteItem')} />
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('RocketLauncherItem')} >
+
+          <Text style={[styles.buttonText]}>Rocket Launcher</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ExplodingArrowItem')} >
+
+          <Text style={[styles.buttonText]}>Exploding Arrow</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ExplodingCrossbowBoltItem')} >
+
+          <Text style={[styles.buttonText]}>Exploding Crossbow Bolt</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('RustyBarrelItem')} >
+
+          <Text style={[styles.buttonText]}>Rusty Barrel</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('TinLandMineItem')} >
+
+          <Text style={[styles.buttonText]}>Tin Land Mine</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('CookingPotMineItem')} >
+
+          <Text style={[styles.buttonText]}>Cooking Pot Mine</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('HubCapMineItem')} >
+
+          <Text style={[styles.buttonText]}>Hub Cap Mine</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('AirFilterLandMineItem')} >
+
+          <Text style={[styles.buttonText]}>Air Filter Land Mine</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('TimedChargeItem')} >
+
+          <Text style={[styles.buttonText]}>Timed Charge</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('MolotovCocktailItem')} >
+
+          <Text style={[styles.buttonText]}>Molotov Cocktail</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('PipeBombItem')} >
+
+          <Text style={[styles.buttonText]}>Pipe Bomb</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ContactGrenadeItem')} >
+
+          <Text style={[styles.buttonText]}>Contact Grenade</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('GrenadeItem')} >
+
+          <Text style={[styles.buttonText]}>Grenade</Text>
+
+        </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('StickofDynamiteItem')} >
+
+          <Text style={[styles.buttonText]}>Stick of Dynamite</Text>
+
+        </TouchableOpacity>
       </ScrollView>
     );
   }
 
 export default ExplosivesScreen;
+
+
+const styles = StyleSheet.create({
+  contentContainerStyle: {
+    alignItems: 'center',
+    paddingBottom: 200,
+  },
+  container: {
+    backgroundColor: 'rgb(20, 20, 20)',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  scrollContainer: {
+    flex: 1,
+    paddingVertical: 10,
+    
+  },
+  text: {
+    color: 'red',
+    marginBottom: 5,
+    marginHorizontal: 5,
+  },
+  list: {
+    color: 'green',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  screenHeader: {
+    color: 'red',
+    fontSize: 35,
+    textAlign: 'center',
+    marginBottom: 20,
+  },
+  sectionHeader: {
+    color: 'red',
+    fontSize: 25,
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+  button: {
+    backgroundColor: 'black',
+    borderColor: 'red',
+    borderWidth: 2,
+    borderRadius: 5,
+    marginHorizontal: 5,
+    marginTop: 5,
+    alignItems: 'center',
+    height: '5%',
+    width: '80%',
+  },
+  buttonText: {
+    color: 'red',
+    fontSize: 24,
+  },
+});
