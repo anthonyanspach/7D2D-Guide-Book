@@ -1,5 +1,5 @@
 {/*   */}
-import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -8,22 +8,77 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 function ExplodingArrowItem({ navigation }) {
     return (
-      <View>
-        <Text>Exploding Arrow Info</Text>
+      <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
+        <Text style={[styles.screenHeader]}>Exploding Arrow Info</Text>
 
-        <Text>Description:</Text>
-        <Text>Exploding Arrows are an Explosive type of Ammunition used by Bows. In order to equip arrows, hold the reload key while the bow is equipped. Select the ammunition type in the shown radial menu.</Text>
+        <Text style={[styles.text]}>Description:</Text>
+        <Text style={[styles.text]}>Exploding Arrows are an Explosive type of Ammunition used by Bows. In order to equip arrows, hold the reload key while the bow is equipped. Select the ammunition type in the shown radial menu.</Text>
 
-        <Text>Crafting:</Text>
-        <Text>1 Steel Arrowhead</Text>
-        <Text>2 Scrap Polymers</Text>
-        <Text>6 Gun Powder</Text>
-        <Text>1 Duct Tape</Text>
+        <Text style={[styles.list]}>Crafting:</Text>
+        <Text style={[styles.list]}>1 Steel Arrowhead</Text>
+        <Text style={[styles.list]}>2 Scrap Polymers</Text>
+        <Text style={[styles.list]}>6 Gun Powder</Text>
+        <Text style={[styles.list]}>1 Duct Tape</Text>
 
-        <Text>Unlock Options:</Text>
-        <Text>Ranger's Guide to Archery Vol.2</Text>
-      </View>
+        <Text style={[styles.list]}>Unlock Options:</Text>
+        <Text style={[styles.list]}>Ranger's Guide to Archery Vol.2</Text>
+      </ScrollView>
     );
   }
 
 export default ExplodingArrowItem;
+
+
+const styles = StyleSheet.create({
+  contentContainerStyle: {
+    alignItems: 'center',
+    paddingBottom: 200,
+  },
+  container: {
+    backgroundColor: 'rgb(20, 20, 20)',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  scrollContainer: {
+    flex: 1,
+    paddingVertical: 10,
+    
+  },
+  text: {
+    color: 'red',
+    marginBottom: 5,
+    marginHorizontal: 5,
+  },
+  list: {
+    color: 'green',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  screenHeader: {
+    color: 'red',
+    fontSize: 35,
+    textAlign: 'center',
+    marginBottom: 20,
+  },
+  sectionHeader: {
+    color: 'red',
+    fontSize: 25,
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+  button: {
+    backgroundColor: 'black',
+    borderColor: 'red',
+    borderWidth: 2,
+    borderRadius: 5,
+    marginHorizontal: 5,
+    marginTop: 5,
+    alignItems: 'center',
+    height: '7%',
+    width: '80%',
+  },
+  buttonText: {
+    color: 'red',
+    fontSize: 25,
+  },
+});

@@ -1,5 +1,5 @@
 {/*   */}
-import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -8,21 +8,76 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 function PipeBombItem({ navigation }) {
     return (
-      <View>
-        <Text>Pipe Bomb Info</Text>
+      <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
+        <Text style={[styles.screenHeader]}>Pipe Bomb Info</Text>
 
-        <Text>Description:</Text>
-        <Text>A Pipe Bomb is a throwable Explosive weapon good for damaging groups of Zombies or players.</Text>
+        <Text style={[styles.text]}>Description:</Text>
+        <Text style={[styles.text]}>A Pipe Bomb is a throwable Explosive weapon good for damaging groups of Zombies or players.</Text>
 
-        <Text>Crafting:</Text>
-        <Text>1 Plant Fiber</Text>
-        <Text>12 Gun Powder</Text>
-        <Text>1 Short Pipe</Text>
+        <Text style={[styles.list]}>Crafting:</Text>
+        <Text style={[styles.list]}>1 Plant Fiber</Text>
+        <Text style={[styles.list]}>12 Gun Powder</Text>
+        <Text style={[styles.list]}>1 Short Pipe</Text>
 
-        <Text>Unlock Options:</Text>
-        <Text>Explosive Magazine</Text>
-      </View>
+        <Text style={[styles.list]}>Unlock Options:</Text>
+        <Text style={[styles.list]}>Explosive Magazine</Text>
+      </ScrollView>
     );
   }
 
 export default PipeBombItem;
+
+
+const styles = StyleSheet.create({
+  contentContainerStyle: {
+    alignItems: 'center',
+    paddingBottom: 200,
+  },
+  container: {
+    backgroundColor: 'rgb(20, 20, 20)',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  scrollContainer: {
+    flex: 1,
+    paddingVertical: 10,
+    
+  },
+  text: {
+    color: 'red',
+    marginBottom: 5,
+    marginHorizontal: 5,
+  },
+  list: {
+    color: 'green',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  screenHeader: {
+    color: 'red',
+    fontSize: 35,
+    textAlign: 'center',
+    marginBottom: 20,
+  },
+  sectionHeader: {
+    color: 'red',
+    fontSize: 25,
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+  button: {
+    backgroundColor: 'black',
+    borderColor: 'red',
+    borderWidth: 2,
+    borderRadius: 5,
+    marginHorizontal: 5,
+    marginTop: 5,
+    alignItems: 'center',
+    height: '7%',
+    width: '80%',
+  },
+  buttonText: {
+    color: 'red',
+    fontSize: 25,
+  },
+});

@@ -1,5 +1,5 @@
 {/*   */}
-import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -8,26 +8,81 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 function WashingMachineItem({ navigation }) {
     return (
-      <View>
-        <Text>Washing Machine Info</Text>
+      <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
+        <Text style={[styles.screenHeader]}>Washing Machine Info</Text>
 
-        <Text>Description:</Text>
-        <Text>A Washing Machine is a lootable container found throughout the world in certain POIs.</Text>
+        <Text style={[styles.text]}>Description:</Text>
+        <Text style={[styles.text]}>A Washing Machine is a lootable container found throughout the world in certain POIs.</Text>
 
-        <Text>Dismantling:</Text>
-        <Text>Possible Harvested Materials</Text>
-        <Text>Iron</Text>
-        <Text>Electrical Parts</Text>
-        <Text>Mechanical Parts</Text>
-        <Text>Short Iron Pipe</Text>
+        <Text style={[styles.list]}>Dismantling:</Text>
+        <Text style={[styles.list]}>Possible Harvested Materials</Text>
+        <Text style={[styles.list]}>Iron</Text>
+        <Text style={[styles.list]}>Electrical Parts</Text>
+        <Text style={[styles.list]}>Mechanical Parts</Text>
+        <Text style={[styles.list]}>Short Iron Pipe</Text>
 
-        <Text>Crafting:</Text>
-        <Text>None</Text>
+        <Text style={[styles.list]}>Crafting:</Text>
+        <Text style={[styles.list]}>None</Text>
 
-        <Text>Unlock Options:</Text>
-        <Text>None / Only Found</Text>
-      </View>
+        <Text style={[styles.list]}>Unlock Options:</Text>
+        <Text style={[styles.list]}>None / Only Found</Text>
+      </ScrollView>
     );
   }
 
 export default WashingMachineItem;
+
+
+const styles = StyleSheet.create({
+  contentContainerStyle: {
+    alignItems: 'center',
+    paddingBottom: 200,
+  },
+  container: {
+    backgroundColor: 'rgb(20, 20, 20)',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  scrollContainer: {
+    flex: 1,
+    paddingVertical: 10,
+    
+  },
+  text: {
+    color: 'red',
+    marginBottom: 5,
+    marginHorizontal: 5,
+  },
+  list: {
+    color: 'green',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  screenHeader: {
+    color: 'red',
+    fontSize: 35,
+    textAlign: 'center',
+    marginBottom: 20,
+  },
+  sectionHeader: {
+    color: 'red',
+    fontSize: 25,
+    textAlign: 'center',
+    marginBottom: 10,
+  },
+  button: {
+    backgroundColor: 'black',
+    borderColor: 'red',
+    borderWidth: 2,
+    borderRadius: 5,
+    marginHorizontal: 5,
+    marginTop: 5,
+    alignItems: 'center',
+    height: '7%',
+    width: '80%',
+  },
+  buttonText: {
+    color: 'red',
+    fontSize: 25,
+  },
+});
