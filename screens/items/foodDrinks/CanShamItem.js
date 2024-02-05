@@ -4,6 +4,9 @@ import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 're
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import { styles } from "../../../assets/styles/Styles";
+
+
 
 
 function CanShamItem({ navigation }) {
@@ -11,72 +14,18 @@ function CanShamItem({ navigation }) {
       <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
         <Text style={[styles.screenHeader]}>Can of Sham Info</Text>
 
-        <Text style={[styles.text]}>Description:</Text>
+        <Text style={[styles.textHeader]}>Description:</Text>
         <Text style={[styles.text]}>A Can of Sham (aka Canned Sham) is a Canned Food that can be looted from many of the various houses or large amounts in Shamway Grocery Store or Shamway Factory. As with all Canned Food, Can of Sham has the advantage of being ready to consume immediately without the need to be cooked first.</Text>
         <Text style={[styles.text]}>Can of Sham is the only Canned Food that can be crafted. However, it is better used to craft Sham Chowder than eaten directly.</Text>
 
-        <Text style={[styles.list]}>Fullness: +15</Text>
-        <Text style={[styles.list]}>Hydration: 0</Text>
-        <Text style={[styles.list]}>Stamina: 0</Text>
-        <Text style={[styles.list]}>Health: +7</Text>
-        <Text style={[styles.list]}>Dysentery Chance: 0%</Text>
+        <Text style={[styles.attListHeader]}>Attributes:</Text>
+        <Text style={[styles.attList]}>Fullness: +15</Text>
+        <Text style={[styles.attList]}>Hydration: 0</Text>
+        <Text style={[styles.attList]}>Stamina: 0</Text>
+        <Text style={[styles.attList]}>Health: +7</Text>
+        <Text style={[styles.attList]}>Dysentery Chance: 0%</Text>
       </ScrollView>
     );
   }
 
 export default CanShamItem;
-
-
-const styles = StyleSheet.create({
-  contentContainerStyle: {
-    alignItems: 'center',
-    paddingBottom: 200,
-  },
-  container: {
-    backgroundColor: 'rgb(20, 20, 20)',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  scrollContainer: {
-    flex: 1,
-    paddingVertical: 10,
-    
-  },
-  text: {
-    color: 'red',
-    marginBottom: 5,
-    marginHorizontal: 5,
-  },
-  list: {
-    color: 'green',
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-  screenHeader: {
-    color: 'red',
-    fontSize: 35,
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  sectionHeader: {
-    color: 'red',
-    fontSize: 25,
-    textAlign: 'center',
-    marginBottom: 10,
-  },
-  button: {
-    backgroundColor: 'black',
-    borderColor: 'red',
-    borderWidth: 2,
-    borderRadius: 5,
-    marginHorizontal: 5,
-    marginTop: 5,
-    alignItems: 'center',
-    height: '7%',
-    width: '80%',
-  },
-  buttonText: {
-    color: 'red',
-    fontSize: 25,
-  },
-});

@@ -4,26 +4,29 @@ import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 're
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import { styles } from "../../assets/styles/Styles";
+
 
 
 function CraftingScreen({ navigation }) {
     return (
       <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
+        <Text style={[styles.screenHeader]}>Crafting Screen</Text>
+
         <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('WorkstationsScreen')} >
 
           <Text style={[styles.buttonText]}>WorkStations</Text>
 
         </TouchableOpacity>
-        <Text style={[styles.screenHeader]}>Crafting Screen</Text>
 
 
-        <Text style={[styles.text]}>Description:</Text>
+        <Text style={[styles.textHeader]}>Description:</Text>
         <Text style={[styles.text]}>Crafting is the process of making an item from its constituent parts. It is an integral aspect of 7 Days to Die that is accomplished via the Crafting Menu. Almost all items and blocks found in-game can be crafted with a few exceptions. By utilizing crafting, the player can obtain access to items to aid in their survival without relying on their luck of finding items through looting. Crafting can be done in the player's inventory and in any of the workstations: a Campfire, a Forge, a Workbench, a Cement Mixer and a Chemistry Station. Most of these workstations have their own unique recipes that can only be crafted in the respective workstation.</Text>
 
         <Text style={[styles.text]}>Components used for crafting are obtained via looting, farming, mining, or harvesting. Some components need to be crafted from other base components. Once the player has obtained all the necessary components, found an appropriate crafting station and any possible crafting appliances needed and/or learned the required skill or recipe if needed, they can proceed to craft the item.</Text>
 
 
-        <Text style={[styles.text]}>Crafting & Trouble Shooting: section</Text>
+        <Text style={[styles.textHeader]}>Crafting & Trouble Shooting:</Text>
         <Text style={[styles.text]}>To craft an item, the player must select the specific item in their crafting menu and already have the needed resources used to craft the specific item in the inventory to finally click the button "craft". Optionally, the player can select how many items should be crafted by clicking the left and right arrows located at the top left on the right panel. This amount can also be changed simply by entering a number in the input panel located between the two arrows. Clicking on the item from the crafting menu while holding 'Shift' will automatically set the crafting amount to the max that can be made from the resources in the player's inventory.</Text>
 
         <Text style={[styles.text]}>If an item cannot be crafted (colored in light grey or craft button missing completely), it is because of one or more of the following reasons:</Text>
@@ -50,52 +53,3 @@ function CraftingScreen({ navigation }) {
   }
 
 export default CraftingScreen;
-
-const styles = StyleSheet.create({
-  contentContainerStyle: {
-    alignItems: 'center',
-    paddingBottom: 200,
-  },
-  container: {
-    backgroundColor: 'rgb(20, 20, 20)',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  scrollContainer: {
-    flex: 1,
-    paddingVertical: 10,
-    
-  },
-  text: {
-    color: 'red',
-    marginBottom: 5,
-    marginHorizontal: 5,
-  },
-  screenHeader: {
-    color: 'red',
-    fontSize: 35,
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  sectionHeader: {
-    color: 'red',
-    fontSize: 25,
-    textAlign: 'center',
-    marginBottom: 10,
-  },
-  button: {
-    backgroundColor: 'black',
-    borderColor: 'red',
-    borderWidth: 2,
-    borderRadius: 5,
-    marginHorizontal: 5,
-    marginTop: 5,
-    alignItems: 'center',
-    height: '4%',
-    width: '80%',
-  },
-  buttonText: {
-    color: 'red',
-    fontSize: 25,
-  },
-});

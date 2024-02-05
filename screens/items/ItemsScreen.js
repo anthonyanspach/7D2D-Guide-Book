@@ -6,6 +6,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
 
+
+
 function ItemsScreen({ navigation }) {
     return (
         <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]} >
