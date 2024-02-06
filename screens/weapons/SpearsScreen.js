@@ -4,6 +4,8 @@ import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 're
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import { styles } from "../../assets/styles/Styles";
+
 
 
 function WeaponsScreen({ navigation }) {
@@ -11,20 +13,20 @@ function WeaponsScreen({ navigation }) {
       <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
         <Text style={[styles.screenHeader]}>Spears</Text>
 
-        <Text style={[styles.text]}>Description:</Text>
+        <Text style={[styles.textHeader]}>Description:</Text>
         <Text style={[styles.text]}>Spears are covered under the perk Spear Master. They offer a longer range than other melee weapons. As of Alpha 21 spears can no longer be thrown.</Text>
         
-        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('StoneSpearItem')} >
+        <TouchableOpacity style={[styles.glassesButton]} onPress={() => navigation.navigate('StoneSpearItem')} >
 
           <Text style={[styles.buttonText]}>Stone Spear</Text>
 
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('IronSpearItem')} >
+        <TouchableOpacity style={[styles.glassesButton]} onPress={() => navigation.navigate('IronSpearItem')} >
 
           <Text style={[styles.buttonText]}>Iron Spear</Text>
 
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('SteelSpearItem')} >
+        <TouchableOpacity style={[styles.glassesButton]} onPress={() => navigation.navigate('SteelSpearItem')} >
 
           <Text style={[styles.buttonText]}>Steel Spear</Text>
 
@@ -34,58 +36,3 @@ function WeaponsScreen({ navigation }) {
   }
 
 export default WeaponsScreen;
-
-
-const styles = StyleSheet.create({
-  contentContainerStyle: {
-    alignItems: 'center',
-    paddingBottom: 200,
-  },
-  container: {
-    backgroundColor: 'rgb(20, 20, 20)',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  scrollContainer: {
-    flex: 1,
-    paddingVertical: 10,
-    
-  },
-  text: {
-    color: 'red',
-    marginBottom: 5,
-    marginHorizontal: 5,
-  },
-  list: {
-    color: 'green',
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-  screenHeader: {
-    color: 'red',
-    fontSize: 35,
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  sectionHeader: {
-    color: 'red',
-    fontSize: 25,
-    textAlign: 'center',
-    marginBottom: 10,
-  },
-  button: {
-    backgroundColor: 'black',
-    borderColor: 'red',
-    borderWidth: 2,
-    borderRadius: 5,
-    marginHorizontal: 5,
-    marginTop: 5,
-    alignItems: 'center',
-    height: '14%',
-    width: '80%',
-  },
-  buttonText: {
-    color: 'red',
-    fontSize: 25,
-  },
-});

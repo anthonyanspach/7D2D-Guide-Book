@@ -4,6 +4,8 @@ import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 're
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import { styles } from "../../assets/styles/Styles";
+
 
 
 function SurvivalScreen({ navigation }) {
@@ -11,7 +13,7 @@ function SurvivalScreen({ navigation }) {
       <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
         <Text style={[styles.screenHeader]}>Survival Mechanics</Text>
 
-        <Text style={[styles.text]}>Day and Night</Text>
+        <Text style={[styles.textHeader]}>Day and Night</Text>
         <Text style={[styles.text]}>Day and night settings can be defined by the player on the menu before starting a game.</Text>
 
         <Text style={[styles.text]}>You can change how many in-game hours there are in each day (12, 14, 16, or 18 hours in each in-game day). The sun will always set at 22:00 and rise at either 4:00, 6:00, 8:00, or 10:00.</Text>
@@ -23,7 +25,7 @@ function SurvivalScreen({ navigation }) {
         <Text style={[styles.text]}>Time of day or night does not affect how the player obtains experience, loot, or any other variable besides how bright or dark the world is and if the zombies are allowed to run or not.</Text>
 
 
-        <Text style={[styles.text]}>Temperature:</Text>
+        <Text style={[styles.textHeader]}>Temperature:</Text>
         <Text style={[styles.text]}>Every player has their own temperature and it can be affected by clothing, their surroundings, the weather, and more.</Text>
 
         <Text style={[styles.text]}>Temperature cannot give the player any positive effects, it can only give neutral and negative effects.</Text>
@@ -35,7 +37,7 @@ function SurvivalScreen({ navigation }) {
         <Text style={[styles.text]}>Standing near other players will not increase your temperature.</Text>
 
 
-        <Text style={[styles.text]}>Wet:</Text>
+        <Text style={[styles.textHeader]}>Wet:</Text>
         <Text style={[styles.text]}>Swimming in water, being outside in the rain (or snow), or against an open window inside a building while it is raining or snowing can cause the player to get wet.</Text>
 
         <Text style={[styles.text]}>Your temperature will always decrease while you are wet.</Text>
@@ -50,52 +52,3 @@ function SurvivalScreen({ navigation }) {
   }
 
 export default SurvivalScreen;
-
-const styles = StyleSheet.create({
-  contentContainerStyle: {
-    alignItems: 'center',
-    paddingBottom: 200,
-  },
-  container: {
-    backgroundColor: 'rgb(20, 20, 20)',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  scrollContainer: {
-    flex: 1,
-    paddingVertical: 10,
-    
-  },
-  text: {
-    color: 'red',
-    marginBottom: 5,
-    marginHorizontal: 5,
-  },
-  screenHeader: {
-    color: 'red',
-    fontSize: 35,
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  sectionHeader: {
-    color: 'red',
-    fontSize: 25,
-    textAlign: 'center',
-    marginBottom: 10,
-  },
-  button: {
-    backgroundColor: 'black',
-    borderColor: 'red',
-    borderWidth: 2,
-    borderRadius: 5,
-    marginHorizontal: 5,
-    marginTop: 5,
-    alignItems: 'center',
-    height: '7%',
-    width: '80%',
-  },
-  buttonText: {
-    color: 'red',
-    fontSize: 25,
-  },
-});

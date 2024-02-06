@@ -4,6 +4,8 @@ import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 're
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import { styles } from "../../assets/styles/Styles";
+
 
 
 function CraftinggSystemScreen({ navigation }) {
@@ -11,7 +13,7 @@ function CraftinggSystemScreen({ navigation }) {
       <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
         <Text style={[styles.screenHeader]}>Crafting Mechanics</Text>
 
-        <Text style={[styles.text]}>Crafting:</Text>
+        <Text style={[styles.textHeader]}>Crafting:</Text>
         <Text style={[styles.text]}>Once a player has gathered the necessary materials, many items can be crafted directly from a player's inventory.</Text>
 
         <Text style={[styles.text]}>Some items must be crafted inside a forge, workbench, chemistry station, or cement mixer.</Text>
@@ -23,7 +25,7 @@ function CraftinggSystemScreen({ navigation }) {
         <Text style={[styles.text]}>The player cannot craft everything straight away. Some crafting recipes must be learnt through perks, and some must be found via rare schematics.</Text>
 
 
-        <Text style={[styles.text]}>Crafting Menu:</Text>
+        <Text style={[styles.textHeader]}>Crafting Menu:</Text>
         <Text style={[styles.text]}>The crafting menu allows the player to craft items.</Text>
 
         <Text style={[styles.text]}>Opening the crafting menu does not pause time.</Text>
@@ -33,7 +35,7 @@ function CraftinggSystemScreen({ navigation }) {
         <Text style={[styles.text]}>Players can only craft four stacks of items at a time.</Text>
 
 
-        <Text style={[styles.text]}>Chemistry:</Text>
+        <Text style={[styles.textHeader]}>Chemistry:</Text>
         <Text style={[styles.text]}>The only place a player can use chemistry is at a chemistry station.</Text>
 
         <Text style={[styles.text]}>Chemistry is a cheaper way of producing some items the player can otherwise craft in their inventories. For example, gunpowder requires half the materials if crafted in a chemistry station.</Text>
@@ -41,7 +43,7 @@ function CraftinggSystemScreen({ navigation }) {
         <Text style={[styles.text]}>A chemistry station is essential for mass-producing items such as gunpowder, antibiotics, and oil.</Text>
 
 
-        <Text style={[styles.text]}>Cooking:</Text>
+        <Text style={[styles.textHeader]}>Cooking:</Text>
         <Text style={[styles.text]}>The only place a player can cook at is a Campfire.</Text>
 
         <Text style={[styles.text]}>Cooking is a requirement to be able to make unhealthy foods such as raw meat into healthier foods such as Meat Stew.</Text>
@@ -51,7 +53,7 @@ function CraftinggSystemScreen({ navigation }) {
         <Text style={[styles.text]}>Some recipes require additional tools, like the Cooking Pot, to be installed in the campfire.</Text>
 
 
-        <Text style={[styles.text]}>Forging:</Text>
+        <Text style={[styles.textHeader]}>Forging:</Text>
         <Text style={[styles.text]}>The forge is used to make nearly every metal item in the game.</Text>
 
         <Text style={[styles.text]}>To craft an item in the forge, the material needed to craft the selected item must be smelted, putting the material in the forge itself. The forge will not use materials from the player's inventory.</Text>
@@ -66,52 +68,3 @@ function CraftinggSystemScreen({ navigation }) {
   }
 
 export default CraftinggSystemScreen;
-
-const styles = StyleSheet.create({
-  contentContainerStyle: {
-    alignItems: 'center',
-    paddingBottom: 200,
-  },
-  container: {
-    backgroundColor: 'rgb(20, 20, 20)',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  scrollContainer: {
-    flex: 1,
-    paddingVertical: 10,
-    
-  },
-  text: {
-    color: 'red',
-    marginBottom: 5,
-    marginHorizontal: 5,
-  },
-  screenHeader: {
-    color: 'red',
-    fontSize: 35,
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  sectionHeader: {
-    color: 'red',
-    fontSize: 25,
-    textAlign: 'center',
-    marginBottom: 10,
-  },
-  button: {
-    backgroundColor: 'black',
-    borderColor: 'red',
-    borderWidth: 2,
-    borderRadius: 5,
-    marginHorizontal: 5,
-    marginTop: 5,
-    alignItems: 'center',
-    height: '7%',
-    width: '80%',
-  },
-  buttonText: {
-    color: 'red',
-    fontSize: 25,
-  },
-});

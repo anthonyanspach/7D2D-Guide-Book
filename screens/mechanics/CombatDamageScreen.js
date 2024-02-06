@@ -4,6 +4,8 @@ import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 're
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import { styles } from "../../assets/styles/Styles";
+
 
 
 function CombatDamageScreen({ navigation }) {
@@ -11,18 +13,18 @@ function CombatDamageScreen({ navigation }) {
       <ScrollView  style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
         <Text style={[styles.screenHeader]}>Combat / Damage Mechanics</Text>
 
-        <Text style={[styles.text]}>Block Damage:</Text>
+        <Text style={[styles.textHeader]}>Block Damage:</Text>
         <Text style={[styles.text]}>Block Damage determines how much damage a weapon or tool will do to a block.</Text>
 
         <Text style={[styles.text]}>Every weapon and tool lists how much damage it does to blocks. This damage is determined primarily by the item's Quality.</Text>
 
 
-        <Text style={[styles.text]}>Entity Damage:</Text>
+        <Text style={[styles.textHeader]}>Entity Damage:</Text>
         <Text style={[styles.text]}>Entity Damage determines how much damage a weapon or tool will do to a player, Zombie, or Animal.</Text>
 
         <Text style={[styles.text]}>Every weapon and tool lists how much damage it does to entities. This damage is determined primarily by the item's Quality.</Text>
 
-        <Text style={[styles.text]}>Stealth:</Text>
+        <Text style={[styles.textHeader]}>Stealth:</Text>
         <Text style={[styles.text]}>Stealth allows the player to be quieter, making it harder for zombies to hear the player's movements and actions.</Text>
 
         <Text style={[styles.text]}>When in stealth, actions like mining or looting are quieter.</Text>
@@ -32,7 +34,7 @@ function CombatDamageScreen({ navigation }) {
         <Text style={[styles.text]}>Stealth cannot be used when creatures are already aware of you. This includes special events like the blood moon where a horde of zombies is triggered to attack you.</Text>
 
 
-        <Text style={[styles.text]}>Heatmap:</Text>
+        <Text style={[styles.textHeader]}>Heatmap:</Text>
         <Text style={[styles.text]}>The heatmap is an invisible mechanic that controls zombie spawns around areas the players are most active.</Text>
 
         <Text style={[styles.text]}>There are a lot of things that can increase the heatmap: using firearms, explosives, or buildings like a forge or torch.</Text>
@@ -44,7 +46,7 @@ function CombatDamageScreen({ navigation }) {
         <Text style={[styles.text]}>Small things like opening doors, jumping, falling more than one block, or standing in an area for a period of time can also increase the heat map.</Text>
 
 
-        <Text style={[styles.text]}>Dismemberment:</Text>
+        <Text style={[styles.textHeader]}>Dismemberment:</Text>
         <Text style={[styles.text]}>Dismemberment allows the player to dismember zombies and most animals by doing damage to their limbs and head.</Text>
 
         <Text style={[styles.text]}>Dismembering a certain body part has different effects on zombies.</Text>
@@ -53,52 +55,3 @@ function CombatDamageScreen({ navigation }) {
   }
 
 export default CombatDamageScreen;
-
-const styles = StyleSheet.create({
-  contentContainerStyle: {
-    alignItems: 'center',
-    paddingBottom: 200,
-  },
-  container: {
-    backgroundColor: 'rgb(20, 20, 20)',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  scrollContainer: {
-    flex: 1,
-    paddingVertical: 10,
-    
-  },
-  text: {
-    color: 'red',
-    marginBottom: 5,
-    marginHorizontal: 5,
-  },
-  screenHeader: {
-    color: 'red',
-    fontSize: 35,
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  sectionHeader: {
-    color: 'red',
-    fontSize: 25,
-    textAlign: 'center',
-    marginBottom: 10,
-  },
-  button: {
-    backgroundColor: 'black',
-    borderColor: 'red',
-    borderWidth: 2,
-    borderRadius: 5,
-    marginHorizontal: 5,
-    marginTop: 5,
-    alignItems: 'center',
-    height: '7%',
-    width: '80%',
-  },
-  buttonText: {
-    color: 'red',
-    fontSize: 25,
-  },
-});

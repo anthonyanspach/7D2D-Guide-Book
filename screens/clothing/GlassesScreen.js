@@ -4,38 +4,40 @@ import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 're
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import { styles } from "../../assets/styles/Styles";
+
 
 function GlassesScreen({ navigation }) {
     return (
       <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
         <Text style={[styles.screenHeader]}>Glasses Categories</Text>
 
-        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('LuckyGogglesItem')} >
+        <TouchableOpacity style={[styles.glassesButton]} onPress={() => navigation.navigate('LuckyGogglesItem')} >
 
           <Text style={[styles.buttonText]}>Lucky Goggles</Text>
 
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('SkiGogglesItem')} >
+        <TouchableOpacity style={[styles.glassesButton]} onPress={() => navigation.navigate('SkiGogglesItem')} >
 
           <Text style={[styles.buttonText]}>Ski Goggles</Text>
 
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('NerdyGlassesItem')} >
+        <TouchableOpacity style={[styles.glassesButton]} onPress={() => navigation.navigate('NerdyGlassesItem')} >
 
           <Text style={[styles.buttonText]}>Nerdy Glasses</Text>
 
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('NightVisionGogglesItem')} >
+        <TouchableOpacity style={[styles.glassesButton]} onPress={() => navigation.navigate('NightVisionGogglesItem')} >
 
           <Text style={[styles.buttonText]}>Night Vision Goggles</Text>
 
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ShadesItem')} >
+        <TouchableOpacity style={[styles.glassesButton]} onPress={() => navigation.navigate('ShadesItem')} >
 
           <Text style={[styles.buttonText]}>Shades</Text>
 
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('ToughGuySunglassesItem')} >
+        <TouchableOpacity style={[styles.glassesButton]} onPress={() => navigation.navigate('ToughGuySunglassesItem')} >
 
           <Text style={[styles.buttonText]}>Tough Guy Sunglasses</Text>
 
@@ -45,57 +47,3 @@ function GlassesScreen({ navigation }) {
   }
 
 export default GlassesScreen;
-
-const styles = StyleSheet.create({
-  contentContainerStyle: {
-    alignItems: 'center',
-    paddingBottom: 200,
-  },
-  container: {
-    backgroundColor: 'rgb(20, 20, 20)',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  scrollContainer: {
-    flex: 1,
-    paddingVertical: 10,
-    
-  },
-  text: {
-    color: 'red',
-    marginBottom: 5,
-    marginHorizontal: 5,
-  },
-  list: {
-    color: 'green',
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-  screenHeader: {
-    color: 'red',
-    fontSize: 35,
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  sectionHeader: {
-    color: 'red',
-    fontSize: 25,
-    textAlign: 'center',
-    marginBottom: 10,
-  },
-  button: {
-    backgroundColor: 'black',
-    borderColor: 'red',
-    borderWidth: 2,
-    borderRadius: 5,
-    marginHorizontal: 5,
-    marginTop: 5,
-    alignItems: 'center',
-    height: '15%',
-    width: '80%',
-  },
-  buttonText: {
-    color: 'red',
-    fontSize: 25,
-  },
-});

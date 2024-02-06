@@ -4,6 +4,8 @@ import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 're
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import { styles } from "../../assets/styles/Styles";
+
 
 
 function MiningSystemScreen({ navigation }) {
@@ -11,18 +13,18 @@ function MiningSystemScreen({ navigation }) {
       <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
         <Text style={[styles.screenHeader]}>Mining Mechanics</Text>
 
-        <Text style={[styles.text]}>Overview:</Text>
+        <Text style={[styles.textHeader]}>Overview:</Text>
         <Text style={[styles.text]}>Mining refers to the activity of Harvesting earth-based and metal-based blocks in order to obtain basic resources such as Clay Soil, Small Stone, Iron, Coal, and so on. As in all types of Harvesting, materials are extracted from blocks as they are damaged and/or destroyed by your efforts.</Text>
 
 
-        <Text style={[styles.text]}>Mining Tools:</Text>
+        <Text style={[styles.textHeader]}>Mining Tools:</Text>
         <Text style={[styles.text]}>While Mining can be done using Fists, doing so would be tedious and painful. Equipping an Appropriate Tool will greatly speed up the mining process. For softer terrain, such as dirt, sand and gravel, a Shovel or an Auger will work best. For hard blocks including Stone, Iron Ore, Coal Ore, Potassium Nitrate, Lead Ore, and Oil Shale, Stone Axe can be used in the early game with Iron Pickaxe, Steel Pickaxe and Auger being progressively more efficient. These tools can be viewed and compared here.</Text>
 
 
-        <Text style={[styles.text]}>Finding Common Materials:</Text>
+        <Text style={[styles.textHeader]}>Finding Common Materials:</Text>
         <Text style={[styles.text]}>Common materials such as Clay Soil, Stone, and Sand can be found almost anywhere. Normal forest terrain will produce Clay Soil, Desert terrain will produce Clay Soil and Sand in equal measure, and Gravel (on gravel roads) will produce a mix of Sand and Small Stone. Surface boulders can be mined directly for Small Stone.</Text>
 
-        <Text style={[styles.text]}>Finding and Extracting Ores:</Text>
+        <Text style={[styles.textHeader]}>Finding and Extracting Ores:</Text>
         <Text style={[styles.text]}>Ores are distributed widely underground. There are two ways to find them - surface nodes and random mining. In both cases, mining underground gravel will lead you to more ore. See Following Gravel for more.</Text>
 
         <Text style={[styles.text]}>Any ore can be found in any biome except for Oil Shale which is found only in the desert and replaces Coal. Surface nodes of all other ore types can be found scattered around everywhere and regardless of the surface node type, underground there will likely be a mix of several ores.</Text>
@@ -36,7 +38,7 @@ function MiningSystemScreen({ navigation }) {
         <Text style={[styles.text]}>Ore blocks are always bordered by either another ore block or a gravel block, you will almost never find an ore block completely surrounded by stone. By "following the gravel" you will increase your chances of finding more ore blocks. The image on the right shows some Coal and Lead ore blocks surrounded by gravel.</Text>
 
 
-        <Text style={[styles.text]}>Mining Related Perks:</Text>
+        <Text style={[styles.textHeader]}>Mining Related Perks:</Text>
         <Text style={[styles.text]}>Miner 69er will allow the crafting of better tools, increases their block damage and reduces stamina use.</Text>
 
         <Text style={[styles.text]}>Mother Lode will allow the harvesting of more resources from each node (including Wood from trees).</Text>
@@ -44,7 +46,7 @@ function MiningSystemScreen({ navigation }) {
         <Text style={[styles.text]}>Advanced Engineering will allow forging iron and steel to create better tools.</Text>
 
 
-        <Text style={[styles.text]}>Mining Related Books:</Text>
+        <Text style={[styles.textHeader]}>Mining Related Books:</Text>
         <Text style={[styles.text]}>There is a series of Perk Books which give special bonuses for mining: The Art of Mining. These books give chances to find silver/gold/gems, allow compacting ores into easier-to-carry stacks and, if all of them are read, the player has a chance to one-shot any ore block.</Text>
 
 
@@ -55,57 +57,3 @@ function MiningSystemScreen({ navigation }) {
   }
 
 export default MiningSystemScreen;
-
-const styles = StyleSheet.create({
-  contentContainerStyle: {
-    alignItems: 'center',
-    paddingBottom: 200,
-  },
-  container: {
-    backgroundColor: 'rgb(20, 20, 20)',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  scrollContainer: {
-    flex: 1,
-    paddingVertical: 10,
-    
-  },
-  text: {
-    color: 'red',
-    marginBottom: 5,
-    marginHorizontal: 5,
-  },
-  list: {
-    color: 'green',
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-  screenHeader: {
-    color: 'red',
-    fontSize: 35,
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  sectionHeader: {
-    color: 'red',
-    fontSize: 25,
-    textAlign: 'center',
-    marginBottom: 10,
-  },
-  button: {
-    backgroundColor: 'black',
-    borderColor: 'red',
-    borderWidth: 2,
-    borderRadius: 5,
-    marginHorizontal: 5,
-    marginTop: 5,
-    alignItems: 'center',
-    height: '7%',
-    width: '80%',
-  },
-  buttonText: {
-    color: 'red',
-    fontSize: 25,
-  },
-});

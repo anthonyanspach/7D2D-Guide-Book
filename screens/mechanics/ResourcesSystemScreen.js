@@ -4,6 +4,8 @@ import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 're
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import { styles } from "../../assets/styles/Styles";
+
 
 
 function ResourcesSystemScreen({ navigation }) {
@@ -11,7 +13,7 @@ function ResourcesSystemScreen({ navigation }) {
       <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
         <Text style={[styles.screenHeader]}>Resource Mechanics</Text>
 
-        <Text style={[styles.text]}>Looting:</Text>
+        <Text style={[styles.textHeader]}>Looting:</Text>
         <Text style={[styles.text]}>Looting is done by searching furniture, chests, or garbage cans.</Text>
 
         <Text style={[styles.text]}>Looting takes time and the time it takes is dependent on the item being looted, and the current level of certain skills and perks the player has.</Text>
@@ -21,7 +23,7 @@ function ResourcesSystemScreen({ navigation }) {
         <Text style={[styles.text]}>Looting is not the same as harvesting because looting can be done by simply opening an item, while harvesting must be done with a certain tool, with no loot interface.</Text>
 
 
-        <Text style={[styles.text]}>Mining:</Text>
+        <Text style={[styles.textHeader]}>Mining:</Text>
         <Text style={[styles.text]}>Mining can be done by hand, construction tools, or most effectively, by mining tools such as the Pickaxe or Auger.</Text>
 
         <Text style={[styles.text]}>The most common practice of mining is to find a stone node on the surface and use the appropriate tool to get Small Stones, raw iron, Coal, and nitrate powder.</Text>
@@ -33,7 +35,7 @@ function ResourcesSystemScreen({ navigation }) {
         <Text style={[styles.text]}>Mining is also done with Shovels, but shovels are only used for certain block types like Dirt, Sand, or Gravel, and cannot be used on any type of stone or mineral.</Text>
 
 
-        <Text style={[styles.text]}>Farming:</Text>
+        <Text style={[styles.textHeader]}>Farming:</Text>
         <Text style={[styles.text]}>Farming can be done with plants or trees, and unlike mining is indefinite as if done correctly you will always get more seeds back than you used in the first place.</Text>
 
         <Text style={[styles.text]}>Plants can be turned into seeds in the player's inventory to allow farming, trees, on the other hand, will always give some seeds once a tree is fully cut down.</Text>
@@ -41,13 +43,13 @@ function ResourcesSystemScreen({ navigation }) {
         <Text style={[styles.text]}>Plants require natural sunlight to grow. Artificial light, such as from torches, cannot be used to grow plants that are not reached by sunlight. (Mushrooms are the only exception and do not require sunlight)</Text>
 
 
-        <Text style={[styles.text]}>Appropriate Tool:</Text>
+        <Text style={[styles.textHeader]}>Appropriate Tool:</Text>
         <Text style={[styles.text]}>There are many different types of blocks and each has its own appropriate tool which is best used to destroy them.</Text>
 
         <Text style={[styles.text]}>Not using the appropriate tool reduces the damage the block takes by 20%.</Text>
 
 
-        <Text style={[styles.text]}>Harvesting:</Text>
+        <Text style={[styles.textHeader]}>Harvesting:</Text>
         <Text style={[styles.text]}>Harvesting is done by the player when a Tool is used on either an Animal's corpse or certain Furniture or Decor.</Text>
 
         <Text style={[styles.text]}>An Animal's body cannot be looted and must be harvested using an appropriate tool.</Text>
@@ -64,52 +66,3 @@ function ResourcesSystemScreen({ navigation }) {
   }
 
 export default ResourcesSystemScreen;
-
-const styles = StyleSheet.create({
-  contentContainerStyle: {
-    alignItems: 'center',
-    paddingBottom: 200,
-  },
-  container: {
-    backgroundColor: 'rgb(20, 20, 20)',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  scrollContainer: {
-    flex: 1,
-    paddingVertical: 10,
-    
-  },
-  text: {
-    color: 'red',
-    marginBottom: 5,
-    marginHorizontal: 5,
-  },
-  screenHeader: {
-    color: 'red',
-    fontSize: 35,
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  sectionHeader: {
-    color: 'red',
-    fontSize: 25,
-    textAlign: 'center',
-    marginBottom: 10,
-  },
-  button: {
-    backgroundColor: 'black',
-    borderColor: 'red',
-    borderWidth: 2,
-    borderRadius: 5,
-    marginHorizontal: 5,
-    marginTop: 5,
-    alignItems: 'center',
-    height: '7%',
-    width: '80%',
-  },
-  buttonText: {
-    color: 'red',
-    fontSize: 25,
-  },
-});

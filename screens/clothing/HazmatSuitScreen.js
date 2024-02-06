@@ -4,33 +4,35 @@ import { StyleSheet, Text, View, Button, TouchableOpacity, ScrollView } from 're
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import { styles } from "../../assets/styles/Styles";
+
 
 function HazmatSuitScreen({ navigation }) {
     return (
       <ScrollView style={[styles.scrollContainer]} contentContainerStyle={[styles.contentContainerStyle]}>
         <Text style={[styles.screenHeader]}>Hazmat Suit Set Items</Text>
 
-        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('HazmatBootsItem')} >
+        <TouchableOpacity style={[styles.glassesButton]} onPress={() => navigation.navigate('HazmatBootsItem')} >
 
           <Text style={[styles.buttonText]}>Hazmat Boots</Text>
 
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('HazmatGlovesItem')} >
+        <TouchableOpacity style={[styles.glassesButton]} onPress={() => navigation.navigate('HazmatGlovesItem')} >
 
           <Text style={[styles.buttonText]}>Hazmat Gloves</Text>
 
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('HazmatMaskItem')} >
+        <TouchableOpacity style={[styles.glassesButton]} onPress={() => navigation.navigate('HazmatMaskItem')} >
 
           <Text style={[styles.buttonText]}>Hazmat Mask</Text>
 
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('HazmatPantsItem')} >
+        <TouchableOpacity style={[styles.glassesButton]} onPress={() => navigation.navigate('HazmatPantsItem')} >
 
           <Text style={[styles.buttonText]}>Hazmat Pants</Text>
 
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('HazmatShirtItem')} >
+        <TouchableOpacity style={[styles.glassesButton]} onPress={() => navigation.navigate('HazmatShirtItem')} >
 
           <Text style={[styles.buttonText]}>Hazmat Shirt</Text>
 
@@ -40,57 +42,3 @@ function HazmatSuitScreen({ navigation }) {
   }
 
 export default HazmatSuitScreen;
-
-const styles = StyleSheet.create({
-  contentContainerStyle: {
-    alignItems: 'center',
-    paddingBottom: 200,
-  },
-  container: {
-    backgroundColor: 'rgb(20, 20, 20)',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  scrollContainer: {
-    flex: 1,
-    paddingVertical: 10,
-    
-  },
-  text: {
-    color: 'red',
-    marginBottom: 5,
-    marginHorizontal: 5,
-  },
-  list: {
-    color: 'green',
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-  screenHeader: {
-    color: 'red',
-    fontSize: 35,
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  sectionHeader: {
-    color: 'red',
-    fontSize: 25,
-    textAlign: 'center',
-    marginBottom: 10,
-  },
-  button: {
-    backgroundColor: 'black',
-    borderColor: 'red',
-    borderWidth: 2,
-    borderRadius: 5,
-    marginHorizontal: 5,
-    marginTop: 5,
-    alignItems: 'center',
-    height: '15%',
-    width: '80%',
-  },
-  buttonText: {
-    color: 'red',
-    fontSize: 25,
-  },
-});
