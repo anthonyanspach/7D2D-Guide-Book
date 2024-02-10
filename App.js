@@ -88,6 +88,7 @@ import ZombiesScreen from './screens/mechanics/ZombiesScreen';
 import ElectricityScreen from './screens/mechanics/ElectricityScreen';
 import HealthSystemScreen from './screens/mechanics/HealthSystemScreen';
 import MiningSystemScreen from './screens/mechanics/MiningSystemScreen';
+import SearchScreen from './screens/SearchScreen';
 
 {/*Item screen imports*/}
 
@@ -447,6 +448,7 @@ export default function App() {
         <Stack.Screen name="StartingGuide" component={StartingGuide} />
         <Stack.Screen name="ItemsScreen" component={ItemsScreen} />
         <Stack.Screen name="TrapsTurretsScreen" component={TrapsTurretsScreen} />
+        <Stack.Screen name="SearchScreen" component={SearchScreen} />
         
 
           {/* Tools screens */}

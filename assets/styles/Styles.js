@@ -253,6 +253,31 @@ const styles = StyleSheet.create({
       height: '2%',
       width: '80%',
     },
+    textInput: {
+      backgroundColor: 'grey',
+      color: "black",
+      marginTop:10,
+      height: "10%",
+      width: "80%",
+      fontSize: 20,
+      fontWeight: 'bold',
+    },
+    searchView: {
+      flex: 1,
+      paddingVertical: 10,
+      alignItems: "center",
+    },
+    searchButton: {
+      backgroundColor: 'black',
+      borderColor: 'red',
+      borderWidth: 2,
+      borderRadius: 5,
+      marginHorizontal: 5,
+      marginTop: 5,
+      alignItems: 'center',
+      height: '100%',
+      width: '100%',
+    },
   });
 
 

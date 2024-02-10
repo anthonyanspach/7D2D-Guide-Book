@@ -41,6 +41,11 @@ function HomeScreen({ navigation }) {
           <Text style={[styles.buttonText]}>Mechanics</Text>
 
         </TouchableOpacity>
+        <TouchableOpacity style={[styles.button]} onPress={() => navigation.navigate('SearchScreen')} >
+
+          <Text style={[styles.buttonText]}>Search</Text>
+
+        </TouchableOpacity>
       </ScrollView>
     );
   }
